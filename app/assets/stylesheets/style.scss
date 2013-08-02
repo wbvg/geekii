@@ -91,10 +91,34 @@ div.aubergine {
 div.container-wbvg {
   width: 100%;
   padding: 10px 0 0 0;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .lemon {
     color: #FFCC66;
 }
+
+/* ========= Devise#New Sign-Up =========== */
+
+div.signup_unit {
+  padding: 24px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #333;
+  display: inline-block;
+  background: #ffa73d; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #ffa73d 7%, #ff7c00 37%, #e02104 94%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(7%,#ffa73d), color-stop(37%,#ff7c00), color-stop(94%,#e02104)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #ffa73d 7%,#ff7c00 37%,#e02104 94%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #ffa73d 7%,#ff7c00 37%,#e02104 94%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #ffa73d 7%,#ff7c00 37%,#e02104 94%); /* IE10+ */
+  background: linear-gradient(135deg,  #ffa73d 7%,#ff7c00 37%,#e02104 94%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa73d', endColorstr='#e02104',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+
 

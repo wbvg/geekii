@@ -5,9 +5,23 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+
+# Gems installed for Geeky
 gem 'pg', '~>0.15.1'
 gem 'devise'
 gem 'simple_form'
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'json'
+gem "paperclip", "~> 3.0"
+gem 'devise'
+
+# testing
+gem 'rspec-rails', '~> 2.0'
+
+
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
 # Gems used only for assets and not required
@@ -23,6 +37,22 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
+
+  gem 'annotate'
+  gem 'quiet_assets'
+  gem 'better_errors'
+  # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)
+  # http://localhost:3000/__better_errors (reports last exception for debugging)
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  # Add RailsPanel extension in the Chrome Web Store
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
