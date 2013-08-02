@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: geeky_development
+  pool: 5
+  host: localhost
+  username: willybuttvangelderen
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: geeky_test
+  pool: 5
+  host: localhost
+  username: willybuttvangelderen
+  password:
+
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: geeky_production
+#   pool: 5
+#   username: geeky
+#   password:
