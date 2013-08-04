@@ -1,35 +1,40 @@
- <div class="signup_unit">
-<h2>Sign up</h2>
+ <div class="container marketing pull-center">
+  <div class="row">
+    <div class="col-lg-5">
+      <h2>Sign up</h2>
 
-  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+      <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-  <%= f.label :email %>
-  <%= f.email_field :email, placeholder: 'user@domain.com', :autofocus => true  %>
+      <li><%= f.label :email %><br>
+      <%= f.email_field :email, placeholder: 'user@domain.com', :autofocus => true  %></li>
 
-  <%= f.label :password %>
-  <%= f.password_field :password, placeholder: 'Min 6 Characters'  %>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+      <li><%= f.label :password %><br>
+      <%= f.password_field :password, placeholder: 'Min 6 Characters'  %></li>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+      <li><%= f.label :password_confirmation %><br>
+      <%= f.password_field :password_confirmation %></li>
 
-  <%= f.label :location %>
-  <%= f.text_field :location, :rows=>5 %>
+      <li><%= f.label :username %><br>
+      <%= f.text_field :username %></li>
 
-<h5>Profile Pic </h5>
-  <%= f.file_field :avatar %>
+      <li><%= f.label :location %><br>
+      <%= f.text_field :location, :rows=>5 %></li>
 
-  <%= f.label :occupation %>
-  <%= f.select :occupation, options_for_select([['UX Research'], ['UX Designer'],['UX|UI Designer'], ['Mobile UX|UI Designer'],['Mobile App Designer'],['Mobile App Developer'],['UX - Designer'],['Designer - Developer'],['Jack of all trades'],['Web Developer'],['Software Engineer'],['Database Developer'],['Front-End Developer'],['Back-End Developer'],['Full-Stack Developer']]), :include_blank => true %>
+      <li><%= f.label :avatar, 'Upload Profile Image' %><br>
+      <%= f.file_field :avatar %></li>
 
- <%= f.submit "Sign up", :class => "btn btn-primary btn-large" %>
-<% end %>
+      <li><%= f.label :occupation %><br>
+      <%= f.select :occupation, options_for_select([['UX Research'], ['UX Designer'],['UX|UI Designer'], ['Mobile UX|UI Designer'],['Mobile App Designer'],['Mobile App Developer'],['UX - Designer'],['Designer - Developer'],['Jack of all trades'],['Web Developer'],['Software Engineer'],['Database Developer'],['Front-End Developer'],['Back-End Developer'],['Full-Stack Developer']]), :include_blank => true %></li>
 
-<!--
-<button class="btn btn-large dropdown-toggle"> -->
-<%= render "devise/shared/links" %><!-- </button> -->
-
+      <br>
+      <%= f.submit "Sign up", :class => "btn btn-primary btn-large" %>
+      <% end %>
+      <br>
+      <%= render "devise/shared/links" %>
+    </div>
+    <div class="col-lg-7"><img src="images/sign_up_hello.png"></div>
+  <!-- end row -->
+  </div>
 </div>

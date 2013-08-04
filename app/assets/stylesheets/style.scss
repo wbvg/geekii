@@ -37,7 +37,7 @@ padding: 3px 10px;
 }
 
 .navbar-brand {
-  padding-left: 100px;
+  padding: 10px 0 0 100px;
 }
 
 div.nav .pull-right {
@@ -45,6 +45,31 @@ div.nav .pull-right {
  padding: 5px;
 }
 
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+select{
+  width: 200px;
+  padding: 10px;
+}
+
+
+.pull-right {
+  padding-top: 6px;
+}
+
+.pull-center {
+  width: 60%;
+  margin: 0 auto;
+
+}
 
 .btn-primary {
 
@@ -101,6 +126,8 @@ div.container-wbvg {
 /* ========= Devise#New Sign-Up =========== */
 
 div.signup_unit {
+  width: 600px;
+  margin: 0 auto;
   padding: 24px;
   margin-bottom: 10px;
   font-size: 24px;

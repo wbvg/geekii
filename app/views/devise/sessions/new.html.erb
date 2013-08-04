@@ -1,23 +1,29 @@
-<div class="container">
-
+ <div class="container marketing pull-center">
   <div class="row">
-    <div class="col-lg-4">
-      <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
-      <fieldset>
-      <legend>Sign In</legend>
-      <%= f.input :email, :autofocus => true %>
+    <div class="col-lg-5">
+      <h2>Sign In</h2>
 
-      <%= f.input :password %>
+      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-      <%= f.submit "Sign in" %>
-      </fieldset>
+      <li><%= f.label :email %><br>
+      <%= f.email_field :email, :autofocus => true  %></li>
+
+      <li><%= f.label :password %><br>
+      <%= f.password_field :password, placeholder: 'Min 6 Characters'  %></li>
+
+      <br>
+      <%= f.submit "Sign in", :class => "btn btn-success btn-large" %>
       <% end %>
+      <br>
 
+      <!-- <button class="btn btn-primary" > -->
       <%= render "devise/shared/links" %>
+      <!-- </button> -->
     </div>
-    <div class="col-lg-8">
-    <h1>TEXT HERE</h1>
-    </div>
-  </div>
 
+    <div class="col-lg-7">
+      <img src="images/sign_in_hello.png"></div>
+    <!-- end row -->
+  </div>
 </div>

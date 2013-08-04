@@ -18,6 +18,10 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  avatar_file_name       :string(255)
+#  avatar_content_type    :string(255)
+#  avatar_file_size       :integer
+#  avatar_updated_at      :datetime
 #
 
 class User < ActiveRecord::Base
@@ -40,14 +44,10 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :statuses, :dependent => :destroy
+  has_many :skills, :dependent => :destroy
 
 #Paperclip avatar
   attr_accessible :avatar
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
 
-
-  #Ryan_drake //
-  # def full_name
-  # 	first_name + " " + last_name
-  # end
 end

@@ -16,3 +16,9 @@ Geeky::Application.routes.draw do
 
 
 end
+
+
+
+
+  # resources :fruits , :only => [:index, :create, :show]
+

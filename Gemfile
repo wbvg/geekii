@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 
 # Gems installed for Geeky
 gem 'pg', '~>0.15.1'
@@ -16,9 +15,6 @@ gem "paperclip", "~> 3.0"
 gem 'devise'
 
 # testing
-gem 'rspec-rails', '~> 2.0'
-
-
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -26,6 +22,7 @@ gem 'rspec-rails', '~> 2.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -38,14 +35,21 @@ end
 
 gem 'jquery-rails'
 
+  gem "database_cleaner", :group => :test
+  gem "email_spec", :group => :test
+  gem "factory_girl_rails", :group => :test
+
 group :development, :test do
+  gem 'rspec-rails'
+
+  # gem "capybara"
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'pry-stack_explorer'
 
   gem 'annotate'
   gem 'quiet_assets'
-  gem 'better_errors'
+  # gem 'better_errors'
   # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)
   # http://localhost:3000/__better_errors (reports last exception for debugging)
   gem 'binding_of_caller'
