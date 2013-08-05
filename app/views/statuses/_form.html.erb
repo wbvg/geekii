@@ -1,19 +1,26 @@
-<%= simple_form_for(@status, html: {class: "form-horizontal"}) do |f| %>
-  <% if @status.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+ <div class="container marketing">
+  <h1> Create a Status</h2>
 
-      <ul>
-      <% @status.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+    <%= form_for @status do |f| %>
+        <% flash.each do |name,msg| %>
+          <% content_tag(:div, msg, class: "alert alert-#{name}") %>
+       <% end %>
 
-  <%= f.input :user_id %>
-  <%= f.input :content %>
-  <div class="form-actions">
-  <%= f.button :submit %>
-  </div>
-<% end %>
+<li>
+    <%= f.label :category %><br/>
+    <%= f.select :category, options_for_select([['UX Research'], ['UX Designer'],['UX|UI Designer'], ['Mobile UX|UI Designer'],['Mobile App Designer'],['Mobile App Developer'],['UX - Designer'],['Designer - Developer'],['Jack of all trades'],['Web Developer'],['Software Engineer'],['Database Developer'],['Front-End Developer'],['Back-End Developer'],['Full-Stack Developer']]), :include_blank => true %></li>
+
+<li><%= f.label :status, 'Brag or Yelp' %></li>
+<li><%= f.text_area :status, :rows=>3 %></li>
+
+<li>
+    <%= f.label :need_help, 'Need help?' %>
+    <%= f.check_box :need_help %></li>
+    <%= f.submit :class => "btn btn-primary btn-large"  %>
+    <% end %>
+<br>
+<%= link_to 'Back', root_path %>
+
+</div>
+
+

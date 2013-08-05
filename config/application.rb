@@ -53,6 +53,9 @@ module Geeky
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
+    # added for testing by WBvG
+    config.filter_parameters += [:password, :password_confirmation]
+
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 

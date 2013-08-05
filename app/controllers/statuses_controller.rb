@@ -1,5 +1,45 @@
-# class StatusesController < ApplicationController
-#   def index
+class StatusesController < ApplicationController
+  def index
+  @users = User.all
+   @statuses = Status.all
+
+  end
+
+  def new
+    @users = User.all
+    @statuses = Status.all
+    @status = Status.new
+  end
+
+  def create
+
+    @status = current_user.statuses.create(params[:status])
+    redirect_to(root_path)
+  end
+
+  def show
+
+  end
+
+  def edit
+   @status = current_user.status.find(params[:id])
+  end
+
+  def update
+      status = User.find(params[:id])
+      status.update_attributes(params[:status])
+      redirect_to(status)
+  end
+
+  def destroy
+      status = Status.find(params[:id])
+      status.destroy
+      redirect_to(statuses_path)
+  end
+
+
+end
+
 #     @statuses = Status.all
 
 #     respond_to do |format|

@@ -10,14 +10,9 @@ describe HomeController do
   describe "GET 'show'" do
 
     it "should be successful" do
-      get :show, :username => @user.username
+      get :index
       response.should be_success
     end
 
-    it "should find the right user" do
-      get :show, :username => @user.username
-
-      assigns(:user).should == @user
-    end
   end
 end

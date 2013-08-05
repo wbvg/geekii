@@ -1,5 +1,13 @@
-<h1>New status</h1>
-
 <%= render 'form' %>
 
-<%= link_to 'Back', statuses_path %>
+<hr>
+
+<% @statuses.each do |status| %>
+
+  <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
+  <li> <button class="btn btn-success">
+  <%= link_to(status.user.username, status.user ) %></button></li>
+
+  <li><%= status.category %></li>
+  <li<i><%= status.status %>"</i></li>
+<% end %>

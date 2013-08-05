@@ -1,4 +1,4 @@
-require 'spec_helper'
+
 
 # == Schema Information
 #
@@ -38,13 +38,34 @@ describe User do
       :email => "user@example.com",
       :password => "123456",
       :password_confirmation => "123456",
-
-      # Test avatar next
-      # :avatar_file_name => "willy_fb_profile.jpg"
-      # :avatar_content_type => "image/jpeg",
-      # :avatar_file_size => "38103",
+      :avatar_file_name => "willy_fb_profile.jpg",
+      :avatar_content_type => "image/jpeg",
+      :avatar_file_size => "38103"
     }
   end
+
+    def valid_attributes
+    {
+        # Test avatar next
+      :avatar_file_name => "willy_fb_profile.jpg",
+      :avatar_content_type => "image/jpeg",
+      :avatar_file_size => "38103",
+      :avatar_file_name => fixture_file_upload('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')
+    }
+end
+
+it "should accept valid avatar" do
+@avatar_attr = {
+              :avatar_file_name => Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')
+            }
+  end
+
+
+  it "should be valid avatar" do
+   @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
+    # :avatar_file_name = File.new(Rails.root + 'spec/fixtures/images/willy_fb_profil.jpg')
+  end
+
 
   it "should create a new instance given a valid attribute" do
     User.create!(@login_attr)
@@ -62,11 +83,6 @@ describe User do
       valid_email_user.should be_valid
     end
   end
-
-  # it "should be valid avatar" do
-  #  @attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.png') }
-  #   # :avatar_file_name = File.new(Rails.root + 'spec/fixtures/images/rails.png')
-  # end
 
   it "should reject invalid email addresses" do
     addresses = %w[user@foo,com user_at_foo.org example.user@foo.]
