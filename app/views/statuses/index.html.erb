@@ -1,8 +1,10 @@
  <div class="container marketing">
-  <h1>Status Updates</h1>
+  <h1>Status Updates - index</h1>
   <% @statuses.each do |status| %>
             <div class="">
-                    <li><%= image_tag(status.try(:user).try(:avatar))  %></li>
+
+
+                    <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
                     <li> <button class="btn btn-success">
                         <%= link_to(status.user.username, status.user ) %></button></li>
 

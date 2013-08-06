@@ -16,6 +16,7 @@
 //= require bootstrap-dropdown
 //= require holder
 //= require morris
+//= require tab
 
 
 // $(function(){ $(document).(); });

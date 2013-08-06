@@ -16,7 +16,6 @@ class Status < ActiveRecord::Base
 
   validates :category, presence: true
   validates :status, presence: true
-  validates :need_help, presence: true
   belongs_to :user
 
   validates_length_of :status, :maximum => 254,

@@ -13,7 +13,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'json'
 gem "paperclip", "~> 3.0"
 gem 'devise'
-
+gem 'will_paginate', '~> 3.0.0'
 # testing
 
 # Bundle edge Rails instead:

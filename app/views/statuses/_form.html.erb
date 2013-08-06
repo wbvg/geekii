@@ -15,9 +15,11 @@
 
 <li>
     <%= f.label :need_help, 'Need help?' %>
-    <%= f.check_box :need_help %></li>
-    <%= f.submit :class => "btn btn-primary btn-large"  %>
+    <%= check_box_tag :need_help %></li>
+    <%= f.submit :class => "btn btn-primary btn-large" %>
+
     <% end %>
+
 <br>
 <%= link_to 'Back', root_path %>
 

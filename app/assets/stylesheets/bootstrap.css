@@ -2612,6 +2612,7 @@ button.close {
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
+  width: 100%;
 }
 
 .tab-content > .active,

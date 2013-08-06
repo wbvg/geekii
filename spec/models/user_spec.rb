@@ -44,7 +44,7 @@ describe User do
     }
   end
 
-    def valid_attributes
+  def valid_attributes
     {
         # Test avatar next
       :avatar_file_name => "willy_fb_profile.jpg",
@@ -52,17 +52,15 @@ describe User do
       :avatar_file_size => "38103",
       :avatar_file_name => fixture_file_upload('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')
     }
-end
+  end
 
-it "should accept valid avatar" do
-@avatar_attr = {
-              :avatar_file_name => Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')
-            }
+  it "should accept valid avatar" do
+    @avatar_attr = { :avatar_file_name => Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg') }
   end
 
 
   it "should be valid avatar" do
-   @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
+    @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
     # :avatar_file_name = File.new(Rails.root + 'spec/fixtures/images/willy_fb_profil.jpg')
   end
 

@@ -1,6 +1,37 @@
-<h1>Editing status</h1>
+<h1>Edit status</h1>
 
-<%= render 'form' %>
+<!-- <div class="form-unit">
+  <form method='post' action='<!%= mountain_path(@mountain.id) %> '>
+    <input value=' <!%= @mountain.name %>' type='text' name='mountain[name]'>
+    <input value=' <!%= @mountain.image %>' type='text' name='mountain[image]'>
+    <input value=' <!%= @mountain.country %>' type='text' name='mountain[country]'>
+    <input value=' <!%= @mountain.height %>' type='text' name='mountain[height]'>
+    <button class="btn btn-success">Update</button>
+</form>
+</div>
 
-<%= link_to 'Show', @status %> |
-<%= link_to 'Back', statuses_path %>
+
+ -->
+
+
+<!%= form_for(status, :as => <!-- edit_status, :url => edit_status_path(@status.id), :html => { :method => :post }) do |f| %> -->
+
+    <%= form_for(  status(@status), :method => :post ) do |f| %>
+    <%= devise_error_messages! %>
+
+<li>
+    <%= f.label :category %><br/>
+    <%= f.select :category, options_for_select([['UX Research'], ['UX Designer'],['UX|UI Designer'], ['Mobile UX|UI Designer'],['Mobile App Designer'],['Mobile App Developer'],['UX - Designer'],['Designer - Developer'],['Jack of all trades'],['Web Developer'],['Software Engineer'],['Database Developer'],['Front-End Developer'],['Back-End Developer'],['Full-Stack Developer']]), :include_blank => true %></li>
+
+<li><%= f.label :status, 'Brag or Yelp' %></li>
+<li><%= f.text_area :status, :rows=>3 %></li>
+
+<li>
+    <%= f.label :need_help, 'Need help?' %>
+    <%= check_box_tag :need_help %></li>
+    <%= f.submit :class => "btn btn-primary btn-large" %>
+
+    <% end %>
+
+<br>
+<%= link_to 'Back', root_path %>
