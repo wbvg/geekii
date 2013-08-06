@@ -1,5 +1,3 @@
-
-
 # == Schema Information
 #
 # Table name: users
@@ -61,7 +59,6 @@ describe User do
 
   it "should be valid avatar" do
     @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
-    # :avatar_file_name = File.new(Rails.root + 'spec/fixtures/images/willy_fb_profil.jpg')
   end
 
 

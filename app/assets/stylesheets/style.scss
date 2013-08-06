@@ -11,7 +11,7 @@ body {
 img.profile {
   width:130px;
   height: 130px;
-  border: 5px solid #fff ;
+  border: 7px solid #fff ;
   border-radius: 100%;
 
 }
@@ -29,6 +29,25 @@ img.big-profile {
   display: inline-block;
 }
 
+.nav-tabs.nav-justified li a {
+margin-right: 0;
+border-bottom: 1px solid #dddddd;
+font-size: 1.7em;
+color: #f09363;
+}
+
+.nav-tabs.nav-justified .active a {
+border-bottom-color: #ffffff;
+color: #F15A24;
+}
+
+.nav-tabs.nav-justified {
+background-color:#f0e29f;
+border-radius: 6px;
+border-bottom: 4px solid #fff;
+}
+
+
 /* User show statuses */
 
 div.statuses_show {
@@ -44,23 +63,56 @@ div.statuses_show {
   border-radius: 6px;
   background-color: #FFCC66;
   min-height: 320px;
-  // width: 280px;
+  min-width: 300px;
+}
+
+.topper {
+  margin-top: 10px;
+}
+
+.topper-2 {
+  margin-top: 7px;
+}
+
+
+.reddy {
+  background-color: #f07951;
+}
+
+.bluey {
+  background-color: #97acf0;
 }
 
 div.statuses_home {
-  padding: 20px;
+  padding: 20px 10px;
   margin: 10px;
   font-size: 18px;
   font-weight: 200;
   line-height: 24px;
   color: #fff;
   display: inline-block;
-  text-align: centre !important;
   border-color: 5px solid #fff;
   border-radius: 6px;
   background-color: #f0d78f;
   min-height: 400px;
+  min-width: 300px;
 }
+
+div.statuses_bluey {
+  padding: 20px 10px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #fff;
+  display: inline-block;
+  border-color: 5px solid #fff;
+  border-radius: 6px;
+  background-color: #97acf0;
+  min-height: 400px;
+  min-width: 300px;
+}
+
 
 /* Nav   */
 .navbar .navbar-inverse .navbar-static-top {
@@ -138,7 +190,7 @@ button {
 }
 
 a.btn:hover {
-
+  text-decoration: none;
   background-color: #F15A24;
   border: none;
 }
@@ -179,7 +231,7 @@ div.aubergine {
   color: #F15A24;
   background-color: #604F77;
   width: 100%;
-  padding: 20 30px;
+  padding: 20px 30px;
 }
 
 div.container-wbvg {

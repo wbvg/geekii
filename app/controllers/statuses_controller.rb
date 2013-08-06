@@ -19,9 +19,9 @@ class StatusesController < ApplicationController
   end
 
   def show
-    @users = User.all
-    @statuses = Status.all
-    # redirect_to(edit_status_path)
+    # @users = User.all
+    # @statuses = Status.all
+    @status = Status.find(params[:id])
   end
 
   def edit
@@ -30,9 +30,12 @@ class StatusesController < ApplicationController
   end
 
   def update
-      status = User.find(params[:id])
+
+      status = Status.find(params[:id])
       status.update_attributes(params[:status])
-      redirect_to(status)
+      # @status = current_user.statuses.new(params[:status])
+
+      redirect_to(status_path)
   end
 
   def destroy

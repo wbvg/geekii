@@ -1,35 +1,12 @@
- <div class="container marketing">
+<div class="container marketing">
   <h1>Status Updates - index</h1>
+
   <% @statuses.each do |status| %>
-            <div class="">
-
-
-                    <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
-                    <li> <button class="btn btn-success">
-                        <%= link_to(status.user.username, status.user ) %></button></li>
-
-                    <li><%= status.category %></li>
-                    <li<i><%= status.status %>"</i></li>
-                    <% end %>
-
-
-    </div>
-
-<!-- =begin
-
-<!%= link_to 'Post a New Status', new_status_path, class: "btn btn-primary" %>
-<!% @statuses.each do |status| %>
-<div class="status">
-  <strong><!%= status.user_id %></strong>
-  <p><!%= status.content %></p>
-<div class="meta">
-  <!%= link_to time_ago_in_words(status.created_at) + " ago", status %></td>
-  <span class="admin">
-    <!%= link_to 'Edit', edit_status_path(status) %>
-    <!%= link_to 'Delete', status, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </span>
+    <div class="">
+      <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
+      <li> <button class="btn btn-success">
+      <%= link_to(status.user.username, status.user ) %></button></li>
+      <li><%= status.category %></li>
+      <li<i><%= status.status %>"</i></li>
+  <% end %>
 </div>
-<!% end %>
-
-
- -->

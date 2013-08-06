@@ -7,7 +7,7 @@ describe HomeController do
     sign_in @user
   end
 
-  describe "GET 'show'" do
+  describe "GET 'index'" do
 
     it "should be successful" do
       get :index

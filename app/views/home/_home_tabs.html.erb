@@ -1,10 +1,14 @@
-<%= render 'form' %>
+      <!--         <img class="featurette-image img-circle pull-right" data-src="holder.js/512x512"> -->
+      <h2 class="featurette-heading">Welcome to Geekii<br><span class="text-muted">You will find statuses to help solve a problem or you can just brag about something to find a job</span></h2>
+      <% if user_signed_in? %>
+      <li><%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %></li>
+      <% end %>
+      <br><br>
 
- <div class="lemon">
       <ul class="nav nav-tabs nav-justified"  id="myTab">
       <li class="active"><a href="#all">Latest All</a></li>
       <li><a href="#dufus">Help Dufus</a></li>
-      <li><a href="#owl">I know't Owl</a></li>
+      <li><a href="#owl">Know't Owl</a></li>
       </ul>
 
       <div class="tab-content">
@@ -20,4 +24,3 @@
         <%= render 'home/tab-owl' %>
         </div>
       </div>
-  </div>

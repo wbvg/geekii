@@ -1,0 +1,21 @@
+<div class="lemon topper">
+  <ul class="nav nav-tabs nav-justified"  id="myTab">
+    <li class="active"><a href="#all">Latest All</a></li>
+    <li><a href="#dufus">Help Dufus</a></li>
+    <li><a href="#owl">Know't Owl</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="all"><!-- start all -->
+      <%= render 'users/tab-all' %><!-- end all -->
+    </div>
+
+    <div class="tab-pane fade" id="dufus">
+      <%= render 'users/tab-dufus' %>
+    </div>
+
+    <div class="tab-pane fade" id="owl">
+      <%= render 'users/tab-owl' %>
+    </div>
+  </div>
+
+</div>

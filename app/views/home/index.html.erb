@@ -64,6 +64,7 @@
           <p>Find others to partner, collaborate or solve your problems. See what skills and products others are using.</p>
           <p><a class="btn btn-default" href="#">See more  &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+
         <div class="col-lg-4">
           <img class="img-circle" src="/images/square_brown.png">
           <h2>Design</h2>
@@ -80,130 +81,14 @@
 
     </div>
 
-    <!-- START THE FEATURETTES -->
-    <div class="lemon">
-      <div class="featurette ">
-<!--         <img class="featurette-image img-circle pull-right" data-src="holder.js/512x512"> -->
-        <h2 class="featurette-heading">Welcome to Geekii<br><span class="text-muted">You will find statuses to help solve a problem or you can just brag about something to find a job</span></h2>
-        <% if user_signed_in? %>
-          <li><%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %></li>
-        <% end %>
-        <br><br>
-
-        <ul class="nav nav-tabs nav-justified"  id="myTab">
-          <li class="active"><a href="#all">Latest All</a></li>
-          <li><a href="#dufus">Help Dufus</a></li>
-          <li><a href="#owl">I know't Owl</a></li>
-        </ul>
-
-     <div class="tab-content">
-
-          <div class="tab-pane active" id="all">
-          <!- Start of All Tab content -->
-
-          <% @statuses.each do |status| %>
-            <div class="statuses_home col-lg-3">
-              <ul>
-              <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
-              <% if status.need_help? %>
-                <a href="#" data-toggle="tooltip" title="Oh boii I need help" class=""><%= image_tag('../images/dufus_mini.png' ) %>
-                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I need some help</button></a></li>
-              <% else %>
+  <!-- START THE FEATURETTES -->
+  <div class="lemon">
+    <%= render 'home/home_tabs' %>
+  </div>
 
 
-                    <%= image_tag('../images/owl_upears_mini.png' ) %>
-                   <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button></a></li>
-              <% end %>
-                <li><button class="btn btn-warning">
-                <%= link_to(status.user.username, status.user ) %></button></li>
-
-                <li><%= status.category %></li>
-                <li><i>"<%= status.status %>"</i></li>
-                <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
-                </ul>
-                </div>
-          <% end %>
-
-            <div="row">
-          <div class="paginate col-lg-12">
-            <ul class="pagination pagination-large">
-              <li><a href="#">&laquo;</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-          </div>
-
-        <!- /End of Tab All pane-->
-        </div>
-
-        <div class="tab-pane fade" id="dufus">
-          <!- Start of Dufus Tab content -->
-             <% @statuses.each do |status| %>
-               <% if !status.need_help? %>
-              <div class="statuses_home col-lg-3">
-                <ul>
-                <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
-                  <a href="#" data-toggle="tooltip" title="Oh boii I need help" class="btn-group"><%= image_tag('../images/dufus_mini.png' ) %></li><li>
-                  <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I need some help</button></a></li>
-
-                  <li><button class="btn btn-warning"><%= link_to(status.user.username, status.user ) %></button></li>
-                  <li><%= status.category %></li>
-                  <li><i>"<%= status.status %>"</i></li>
-                  <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
-                </ul>
-               </div>
-                <% end %>
-              <% end %>
-
-          <div="row">
-          <div class="paginate col-lg-12">
-            <ul class="pagination pagination-large">
-              <li><a href="#">&laquo;</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-          </div>
-
-          <!- /End of Tab dufus pane-->
-        </div>
-
-        <div class="fade tab-pane" id="owl">
-        <!- Start of All Tab content -->
-             <% @statuses.each do |status| %>
-              <% if !status.need_help? %>
-                <div class="statuses_home col-lg-3">
-                  <ul>
-                  <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
-                   <%= image_tag('../images/owl_upears_mini.png' ) %>
-                   <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button></a></li>
-                  <li><button class="btn btn-warning"><%= link_to(status.user.username, status.user ) %></button></li>
-                  <li><%= status.category %></li>
-                  <li><i>"<%= status.status %>"</i></li>
-                  <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
-               </div>
-
-                <% end %>
-              <% end %>
-              <div="row">
-          <div class="paginate col-lg-12">
-            <ul class="pagination pagination-large">
-              <li><a href="#">&laquo;</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!- /End of Tab owl pane content -->
-        </div>
-
-      <!- /End of all TAB content -->
-      </div>
-
-
-      </div>
-    </div>
-
-
-      <div class="reddish">
-      <div class="featurette">
+   <div class="reddish">
+    <div class="featurette">
         <img class="featurette-image img-circle pull-left" data-src="holder.js/512x512">
         <h2 class="featurette-heading"><span class="text-muted">Create a Profile<br>Show your Skills</span></h2>
         <p class="lead lemon">At Geekii we connect UX designers, designers and developers. Set up a profile, post your strengths and connect for your projects.</p>

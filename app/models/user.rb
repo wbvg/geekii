@@ -50,4 +50,15 @@ class User < ActiveRecord::Base
   attr_accessible :avatar, :avatar_file_name, :avatar_content_type, :avatar_file_size
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates :avatar, presence: true
+
+  delegate :avatar , :to => :user, :prefix => true, :allow_nil => true
+
+  def user_avatar
+    user.avatar if user
+  end
+
 end
+
+
+
+

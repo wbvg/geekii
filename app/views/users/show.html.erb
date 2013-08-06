@@ -1,44 +1,24 @@
-<div class="container marketing">
+<div class="container marketing lemon">
   <div class="row">
-    <div class="col-lg-5">
-                <%= image_tag @user.avatar.url, :class => 'big-profile' %>
+
+    <div class="col-lg-6">
+    <%= image_tag @user.avatar.url, :class => 'big-profile' %>
     </div>
 
-    <div class="col-lg-5">
-
-                <h1><%= link_to(@user.username, @user) %></h1>
-                <h5><%= @user.occupation %></h5>
-                <%= @user.location %><br>
-                                  <% if user_signed_in? %>
-                      <%= link_to 'Edit profile', edit_user_registration_path,  :class => 'btn btn-large btn-success' %>
-                    <%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %>
-                  <% end %>
+    <div class="col-lg-6">
+    <h1><%= link_to(@user.username, @user) %></h1>
+    <h5><%= @user.occupation %></h5>
+    <li><%= @user.location %></li>
+    <% if user_signed_in? %>
+    <%= link_to 'Edit profile', edit_user_registration_path,  :class => 'btn btn-large btn-success' %>
+    <%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %>
+    <% end %>
     </div>
+
   </div>
 </div>
-<!-- /User Status Container -->
+  <!-- /User Status Container -->
 
-<div class="container marketing">
-
-  <% @user.statuses.each do |status| %>
-    <div class="statuses_show col-lg-4">
-    <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
-      <li> <button class="btn btn-success">
-      <%= link_to(status.user.username, status.user ) %></button></li>
-
-      <li><%= status.category %></li>
-      <li<i><%= status.status %>"</i></li>
-              <% if user_signed_in? %>
-
-      <li><%= link_to 'Edit', edit_status_path(status), :method => :get, :class => 'btn btn-primary' %>
-        <%= link_to 'Delete Status', status, :method => :delete, :class => 'btn btn-danger' %></li>
-              <% end %>
-
-             <% flash.each do |name,msg| %>
-             <% content_tag(:div, msg, class: "alert alert-#{name}") %>
-             <% end %>
-
-    </div>
-    <% end %>
-
+<div class="lemon">
+ <%= render 'users/tabs' %>
 </div>

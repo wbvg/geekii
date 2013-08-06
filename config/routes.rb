@@ -16,7 +16,6 @@ Geeky::Application.routes.draw do
   # get '/statuses/:id/edit' => 'statuses#edit', :as => 'status_edit'
   # post '/statuses/:id' => 'statuses#update'
 
-
   # get 'feed', to: 'statuses#index', as: :feed
 
   root :to => 'home#index'
