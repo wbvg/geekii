@@ -22,7 +22,9 @@ class Profile < ActiveRecord::Base
                             message: "Must be formatted correctly."
                           }
 
-
+  # def @user_profiles
+  #   @user.profiles
+  # end
 
   validates_length_of :chapter, :label, :maximum => 254,
       :too_long => "{{count}} characters is the maximum allowed"

@@ -16,8 +16,12 @@
 //= require bootstrap-dropdown
 //= require holder
 //= require morris
+//= require autocomplete
 //= require tab
 //= require rails.validations
 
+
+
+// $(function(){ $(document).foundation(); });
 
 // $(function(){ $(document).(); });

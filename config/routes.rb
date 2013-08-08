@@ -12,10 +12,9 @@ Geeky::Application.routes.draw do
 
   resources :profiles, :only => [:index, :new, :create] do
     collection do
-      get '/chart/:label', :action => 'chart'
+      get '/chart/:chapter', :action => 'chart'
     end
   end
-
 
   root :to => 'home#index'
 

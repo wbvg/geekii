@@ -12,7 +12,7 @@
         <%= link_to(status.user.username, status.user ) %></button></li>
 
         <li class="topper"><%= status.category %></li>
-        <li><i>"<%= status.status %>"</i></li>
+        <li class="status_control"><i>"<%= status.status %>"</i></li>
         <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
             <% if user_signed_in? %>
       <li><%= link_to 'Edit', edit_status_path(status), :method => :get, :class => 'btn btn-primary' %>

@@ -7,6 +7,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @profiles = Profile.order(:chapter).order(:created_at)
+    @chapters = Profile.all.map(&:chapter).uniq.sort
     @user = User.find(params[:id])
     @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
   end

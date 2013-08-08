@@ -11,6 +11,7 @@ class StatusesController < ApplicationController
     @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
     @status = Status.new
     @status_last = Status.last
+
   end
 
   def create

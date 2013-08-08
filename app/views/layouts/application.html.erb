@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="WBvG @WDI - General Assembly ">
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <title>Geeky</title>
 
+    <title>Geekii - A place to for Designer-Developer Relations</title>
+   <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    <%= stylesheet_link_tag    "application" %>
+    <!%#= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "application" %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+    <%= csrf_meta_tags %>
   </head>
 <body>
-
    <%= render 'layouts/header' %>
-
       <%= yield %>
-
    <%= render 'layouts/footer' %>
-
-
-
   </body>
 </html>

@@ -53,13 +53,17 @@ describe User do
     }
   end
 
-  it "should accept valid avatar" do
-    @avatar_attr = { :avatar_file_name => Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg') }
-  end
+  describe "avatar" do
+
+    it "should accept valid avatar" do
+      @avatar_attr = { :avatar_file_name => Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg') }
+    end
 
 
-  it "should be valid avatar" do
-    @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
+    it "should be valid avatar" do
+      @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
+    end
+
   end
 
   describe "username" do
@@ -171,6 +175,10 @@ end
 
   describe "occupation" do
 
+       it "should have an occupation attribute" do
+      @user.occupation.should eq ("UX | UI Designer")
+      end
+
         it "should reject over 40 character limit strings" do
         max_characters = "a" * 41
         hash = @login_attr.merge(:occupation => max_characters)
@@ -187,6 +195,10 @@ end
 
    describe "location" do
 
+        it "should have an occupation attribute" do
+      @user.occupation.should eq ("UX | UI Designer")
+      end
+
         it "should reject over 50 character limit strings" do
         max_characters = "a" * 51
         hash = @login_attr.merge(:location => max_characters)
@@ -201,10 +213,10 @@ end
     end
 
 
-    it "user requires all content" do
-      user = User.new
-      assert !user.save
-      assert !user.errors[:user].empty?
+    it "user requires all required input fields" do
+      @user = User.new(@login_attr)
+      assert @user.save
+      assert @user.errors[:user].empty?
     end
 
 

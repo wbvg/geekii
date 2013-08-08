@@ -13,7 +13,7 @@
         <%= link_to(status.user.username, status.user ) %></button></li>
 
         <li class="topper"><%= status.category %></li>
-        <li class="status_control"><i>"<%= @user_status_caps %>"</i></li>
+        <li class="status_control"><i>"<%= status.status %>"</i></li>
         <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
       </ul>
     </div>
@@ -30,7 +30,7 @@
         <%= link_to(status.user.username, status.user ) %></button></li>
 
         <li class="topper"><%= status.category %></li>
-        <li><i>"<%= @user_status_caps %>"</i></li>
+        <li class="status_control"><i>"<%= status.status %>"</i></li>
         <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
       </ul>
     </div>

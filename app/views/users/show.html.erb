@@ -1,34 +1,30 @@
 <div class="container marketing lemon">
 
- <div class="row reddish">
+ <div class="row aubergine">
     <div class="col-lg-5">
-      <h2 class="featurette-heading bluey-text">Profiles</h2>
+      <h2 class="featurette-heading bluey-text">Skills</h2>
+      <div class="chart_dufus">
+        <div id="chart"></div>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="float">
+        <%= select_tag( 'chapters', options_for_select(@chapters.map { |a| [a,a]} )) %>
+      </div>
+      <div class="float">
+        <%= button_tag('Chart', :id => 'show_chart', :class => 'btn btn-success btn-large' ) %>
+      </div>
+      <div class="clear">
+      </div>
+      <div class="float">
+        <%= link_to('New', new_profile_path, :remote => true, :class => 'btn btn-primary btn-large') %>
+      </div>
       <div id="new_skill"></div>
-      <div id="chart"></div>
-    </div>
-
-  <div class="col-lg-5">
-    <div class="float">
-      <%= link_to('New', new_profile_path, :remote => true, :class => 'btn btn-primary') %>
-    </div>
-    <div class="float">
-      <%= link_to('Chart', :class => 'btn btn-success', :id => 'show_chart') %>
-    </div>
-    <div class="float">
-      <%= select_tag( 'Add Skills', options_for_select(@labels.map { |a| [a,a]})) %>
-    </div>
-    <div class="clear">
-    </div>
-  </div>
 
   </div>
 
-
-
-
-
-
-
+  </div>
 
   <div class="row lemon">
 
@@ -39,10 +35,10 @@
     <div class="col-lg-4">
        <h1><%= link_to(@user.username, @user) %></h1>
       <h4><%= @user.occupation %> | <%= @user.location %></h4>
-    <% if user_signed_in? %>
-    <%= link_to 'Edit profile', edit_user_registration_path,  :class => 'btn btn-large btn-success' %>
-    <%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %>
-    <% end %>
+        <% if user_signed_in? %>
+          <%= link_to 'Edit profile', edit_user_registration_path,  :class => 'btn btn-large btn-success' %>
+          <%= link_to 'Create Status', new_status_path, :class => 'btn btn-large btn-primary' %>
+        <% end %>
     </div>
 
   </div>

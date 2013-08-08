@@ -7,7 +7,7 @@
      <button type="button" class="btn btn-default topper" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button></li>
     <li><button class="btn btn-warning"><%= link_to(status.user.username, status.user ) %></button></li>
     <li class="topper"><%= status.category %></li>
-    <li><i>"<%= status.status %>"</i></li>
+    <li class="status_control"><i>"<%= status.status %>"</i></li>
     <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
 
     <% if user_signed_in? %>

@@ -30,7 +30,6 @@ class Status < ActiveRecord::Base
   end
 
 
-
   # for the will_paginate
   self.per_page = 4
 

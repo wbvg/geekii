@@ -1,23 +1,30 @@
 class ProfilesController < ApplicationController
 
   def index
-    @profiles = @user.profiles.order(:label).order(:created_at)
-    @labels = @user.profiles.map(&:label).uniq.sort
+    @users = User.all
+    @profiles = Profile.order(:chapter).order(:created_at)
+    @chapters = Profile.all.map(&:chapter).uniq.sort
   end
 
   def new
-    @profiles = Profile.new
+    @profile = Profile.new
   end
 
   def create
-    profile = Profile.create(params[:label])
+    profile = Profile.create(params[:profile])
     current_user.profiles << profile
-    @profiles = @user.profiles.order(:label).order(:created_at)
-    @labels = @user.profiles.map(&:label).uniq.sort
+    @profiles = @user.profiles.order(:chapter).order(:created_at)
+    @chapters = @user.profiles.map(&:chapter).uniq.sort
   end
 
   def chart
-    render :json => @user.profiles.where(:label => params[:label])
+    render :json => Profile.where(:chapter=> params[:chapter]).all
   end
+
+  #  def chart
+  #   render :json => @auth.exercises.where(:activity => params[:activity])
+  # end
+
+
 
 end

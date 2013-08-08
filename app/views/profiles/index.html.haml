@@ -1,20 +1,21 @@
 .reddish
   .container.marketing
-    %h2.featurette-heading.bluey-text Profiles
+    %h2.featurette-heading.bluey-text Skills
     %div#new_skill
 
-    %div#chart
+      %div#chart
 
-    %div.row
-      %div.col-lg-6
-        %div.float
-          = link_to('New', new_profile_path, :remote => true, :class => 'btn btn-primary')
-        %div.float
-          = button_tag('Chart', :class => 'btn btn-success', :id => 'show_chart')
-        %div.float
-          = select_tag 'Add Skills', options_for_select(@labels.map { |a| [a,a]})
-        %div.clear
-      %div.large-5.columns
+      %div.row
+        %div.col-lg-6
+          / %div.float
+          /   = link_to('New', new_profile_path, :remote => true, :class => 'btn btn-primary')
+          %div.float
+            = select_tag 'chapters', options_for_select(@chapters.map { |a| [a,a]})
+          %div.clear
+          %div.float
+            = button_tag('Chart', :class => 'btn btn-success', :id => 'show_chart')
 
-    %ol#profiles
-      = render(:partial => 'profiles')
+        %div.large-5.columns
+
+
+      / = select_tag 'labels', options_for_select(@labels.map { |a| [a,a]})

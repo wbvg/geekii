@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe Status do
-#   it { should belongs_to :users }
-# e nd
+ it { should belongs_to :users }
+end
 
   # == Schema Information
 #
@@ -62,8 +62,8 @@ describe Status do
 
     it "status requires all content" do
       status = Status.new
-      assert !status.save
-      assert !status.errors[:status].empty?
+      assert status.save
+      assert status.errors[:status].empty?
     end
 
 
@@ -72,18 +72,5 @@ describe Status do
       @status_attr.should respond_to(:category)
       @status_attr.category?.should == true
       end
-
-    #    it "passes if the length is correct" do
-    #   expect {
-    #     expect("this string").length to have(11).characters
-    #   }.to pass_with("expected 11 characters, got 11")
-    # end
-
-    #   it "fails if the length is incorrect" do
-    #   expect {
-    #     expect("ahhhhhhhhhhhhhhhhhhhhhhhh hi daniel ahhhhhhhhahhhhhhhhhhhhhhhhhhhhhhhh hi joel ahhhhhhhhahhhhhhhhhhhhhhhhhhhhhhhh hi daniel ahhhhhhhhahhhhhhhhhhhhhhhhhhhhhhhh hi daniel ahhhhhhhhahhhhhhhhhhhhhhhhhhhhhhhh hi daniel ahhhhhhhhahhhhhhhhhhhhhhhhhhhhhhhhhhhhhh").length to have(256).characters
-    #   }.to fail_with("expected 255 characters, got 256")
-    # end
-  end
 
   end

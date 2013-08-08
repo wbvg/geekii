@@ -9,7 +9,6 @@ gem 'rails', '3.2.14'
 gem 'pg', '~>0.15.1'
 gem 'devise'
 gem 'simple_form'
-gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'json'
 gem "paperclip", "~> 3.0"
@@ -36,6 +35,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'jquery-rails'
+
 
   gem "database_cleaner", :group => :test
   gem "email_spec", :group => :test
@@ -53,7 +54,7 @@ group :development, :test do
 
   gem 'annotate'
   gem 'quiet_assets'
-  # gem 'better_errors'
+  gem 'better_errors'
   # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)
   # http://localhost:3000/__better_errors (reports last exception for debugging)
   gem 'binding_of_caller'

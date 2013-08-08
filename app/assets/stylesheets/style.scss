@@ -4,11 +4,21 @@
 
 * { Box-sizing: Border-box }
 
+
 body {
   padding-bottom: 40px;
   color: #F15A24;
   background-color: #FFCC33;
 }
+
+.carousel-inner {
+  overflow: none;
+}
+
+#chart {
+  width: 500px;
+}
+
 
 img.profile {
   width:130px;
@@ -47,6 +57,7 @@ color: #F15A24;
 background-color:#f0e29f;
 border-radius: 6px;
 border-bottom: 4px solid #fff;
+width: 87% !important;
 }
 
 
@@ -223,9 +234,28 @@ textarea {
   height: 30px;
 }
 
+input.btn.btn-success {
+    margin: 10px 0;
+}
+
+
 #user_occupation {
   border: none;
   height: 30px;
+}
+
+select#chapters {
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+}
+
+form#new_profile.new_profile {
+  margin: 10px;
+}
+
+input {
+margin-bottom: 10px;
 }
 
 li.checkbox {
@@ -237,6 +267,14 @@ li.checkbox {
 select{
   width: 200px;
   padding: 10px;
+}
+
+div.chart_dufus {
+  padding: 280px 0 0 0;
+  background: url(../images/chart_bigfella.png) no-repeat;
+  background-image: cover;
+  height: 720px;
+  width: 500px;
 }
 
 

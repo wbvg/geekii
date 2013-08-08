@@ -1,20 +1,20 @@
 $(document).ready(function () {
   var show_chart = function () {
-    var activity = $('#activities').val();
+    var chapter = $('#chapters').val();
 
     $.ajax({
       dataType: 'json',
       type: 'get',
-      url: '/profiles/chart/' + label
+      url: '/profiles/chart/' + chapter
     }).done(process_skill);
   };
 
   var process_skill = function (profiles) {
-    $('#donut-chart').empty();
+    $('#chart').empty();
     new Morris.Donut({
-      element: 'donut-chart',
+      element: 'chart',
       data: profiles,
-      xkey: 'label',
+      xkey: 'chapter',
       ykeys: ['label'],
       labels: ['Value']
     });
@@ -23,11 +23,3 @@ $(document).ready(function () {
   $('#show_chart').click(show_chart).trigger('click');
 });
 
-// Morris.Donut({
-//   element: 'donut-example',
-//   data: [
-//     {label: "Download Sales", value: 12},
-//     {label: "In-Store Sales", value: 30},
-//     {label: "Mail-Order Sales", value: 20}
-//   ]
-// });
