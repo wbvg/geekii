@@ -13,10 +13,11 @@ describe StatusesController do
       response.should be_success
     end
 
+    context 'when not valid' do
+    it { should respond_with 422 }
+      end
+
   end
-
-
-
 
 
     # it "should be successful" do

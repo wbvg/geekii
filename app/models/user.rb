@@ -30,32 +30,44 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   attr_accessible :username, :location, :occupation, :email, :password, :password_confirmation, :remember_me
 
-  validates :occupation, presence: true
-  validates :location, presence: true
-  validates :username, presence: true,
-                           uniqueness: true,
-                           format:  {
+  validates :occupation, presence: true, length: { maximum: 40, message: "Must be less than 40 characters" },
+                            format:  {
                             with: /[a-zA-Z0-9_]/,
                             message: "Must be formatted correctly."
+                          }
+
+  validates :location, presence: true, length: { maximum: 50, message: "Must be less than 50 characters" }
+
+  validates :username, presence: true,
+                           uniqueness: true,
+                           length: { maximum: 20,  message: "Must be less than 20 characters" },
+                           format:  {
+                            with: /[a-zA-Z0-9_]/,
+                            message: "Must be formatted correctly"
                            }
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   # attr_accessible :title, :body
 
-  has_many :statuses, :dependent => :destroy
-  has_many :skills, :dependent => :destroy
+  has_many :statuses, :dependent => :destroy, :order => "created_at DESC"
+  has_many :profiles, :inverse_of => :user, :dependent => :destroy, :order => "created_at DESC"
 
 #Paperclip avatar
   attr_accessible :avatar, :avatar_file_name, :avatar_content_type, :avatar_file_size
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates :avatar, presence: true
 
-  delegate :avatar , :to => :user, :prefix => true, :allow_nil => true
+  delegate :avatar, :to => :user, :prefix => true, :allow_nil => true
 
   def user_avatar
     user.avatar if user
   end
+
+    # for the will_paginate
+  self.per_page = 4
+
+
 
 end
 

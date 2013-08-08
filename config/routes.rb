@@ -7,16 +7,15 @@ Geeky::Application.routes.draw do
     get 'logout' => 'devise/sessions#destroy', as: :logout
   end
 
-  resources :about, :home, :profiles
-  resources :statuses
-  resources :users
+  resources :about, :home, :statuses, :users
 
-  # get '/statuses/:id' => 'statuses#show', :as => 'status'
-  # post'/statuses/:id/delete' => 'statuses#destroy', :as => 'status_delete'
-  # get '/statuses/:id/edit' => 'statuses#edit', :as => 'status_edit'
-  # post '/statuses/:id' => 'statuses#update'
 
-  # get 'feed', to: 'statuses#index', as: :feed
+  resources :profiles, :only => [:index, :new, :create] do
+    collection do
+      get '/chart/:label', :action => 'chart'
+    end
+  end
+
 
   root :to => 'home#index'
 

@@ -1,12 +1,45 @@
+<div class="lemon">
 <div class="container marketing">
-  <h1>Status Updates - index</h1>
+  <div class="row">
+    <div class="col-lg-5">
+      <%= render 'form' %>
+    </div>
 
-  <% @statuses.each do |status| %>
-    <div class="">
-      <li><%= image_tag(status.user.avatar, :class => "profile" ) %></li>
-      <li> <button class="btn btn-success">
-      <%= link_to(status.user.username, status.user ) %></button></li>
-      <li><%= status.category %></li>
-      <li<i><%= status.status %>"</i></li>
-  <% end %>
+    <div class="col-lg-7">
+        <h1>Last Geekii Status</h1>
+        <% if @status_last.need_help? %>
+          <%= render 'latest_dufus' %>
+            <% else %>
+          <%= render 'latest_know_owl' %>
+        <% end %>
+    </div>
+
+  </div>
 </div>
+</div>
+
+<div class="lemon">
+  <div class="container marketing">
+    <h1>Statuses</h1>
+      <ul class="nav nav-tabs nav-justified"  id="myTab">
+      <li class="active"><a href="#all">Latest All</a></li>
+      <li><a href="#dufus">Help Dufus</a></li>
+      <li><a href="#owl">I know't Owl</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="all"><!-- start all -->
+        <%= render 'home/tab-all' %><!-- end all -->
+        </div>
+
+        <div class="tab-pane fade" id="dufus">
+        <%= render 'home/tab-dufus' %>
+        </div>
+
+        <div class="tab-pane fade" id="owl">
+        <%= render 'home/tab-owl' %>
+        </div>
+      </div>
+
+    </div>
+  </div>

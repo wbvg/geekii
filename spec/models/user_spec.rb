@@ -40,6 +40,7 @@ describe User do
       :avatar_content_type => "image/jpeg",
       :avatar_file_size => "38103"
     }
+    @user = User.new(@login_attr)
   end
 
   def valid_attributes
@@ -61,10 +62,26 @@ describe User do
     @avatar_attr = { :avatar => File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }
   end
 
+  describe "username" do
+      it "should have a username attribute" do
+      @user.username.should eq ("Willy")
+      end
 
-  it "should create a new instance given a valid attribute" do
-    User.create!(@login_attr)
+      it "should reject over 20 character limit strings" do
+        max_characters = "a" * 21
+        hash = @login_attr.merge(:username => max_characters)
+        User.new(hash).should_not be_valid
+      end
+
+      it "should accept under 20 character limit strings" do
+        max_characters = "a" * 18
+        hash = @login_attr.merge(:username => max_characters)
+        User.new(hash).should be_valid
+      end
+
   end
+
+ describe "email" do
 
   it "should require an email address" do
     no_email_user = User.new(@login_attr.merge(:email => ""))
@@ -99,6 +116,7 @@ describe User do
     user_with_duplicate_email = User.new(@login_attr)
     user_with_duplicate_email.should_not be_valid
   end
+end
 
   describe "passwords" do
 
@@ -151,4 +169,46 @@ describe User do
 
   end
 
+  describe "occupation" do
+
+        it "should reject over 40 character limit strings" do
+        max_characters = "a" * 41
+        hash = @login_attr.merge(:occupation => max_characters)
+        User.new(hash).should_not be_valid
+      end
+
+      it "should accept under 40 character limit strings" do
+        max_characters = "a" * 10
+        hash = @login_attr.merge(:occupation => max_characters)
+        User.new(hash).should be_valid
+      end
+
+  end
+
+   describe "location" do
+
+        it "should reject over 50 character limit strings" do
+        max_characters = "a" * 51
+        hash = @login_attr.merge(:location => max_characters)
+        User.new(hash).should_not be_valid
+      end
+
+      it "should accept under 40 character limit strings" do
+        max_characters = "a" * 9
+        hash = @login_attr.merge(:location => max_characters)
+        User.new(hash).should be_valid
+      end
+    end
+
+
+    it "user requires all content" do
+      user = User.new
+      assert !user.save
+      assert !user.errors[:user].empty?
+    end
+
+
 end
+
+
+

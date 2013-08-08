@@ -2,6 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+* { Box-sizing: Border-box }
+
 body {
   padding-bottom: 40px;
   color: #F15A24;
@@ -25,7 +27,7 @@ img.big-profile {
   height: 190px;
   border: 14px solid #ccc;
   border-radius: 100%;
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
 }
 
@@ -50,28 +52,31 @@ border-bottom: 4px solid #fff;
 
 /* User show statuses */
 
-div.statuses_show {
-  padding: 30px;
-  margin: 5px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 24px;
-  color: #fff;
-  display: inline-block;
-  text-align: centre !important;
-  border-color: 5px solid #fff;
-  border-radius: 6px;
-  background-color: #FFCC66;
-  min-height: 320px;
-  min-width: 300px;
+
+div.status-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .topper {
   margin-top: 10px;
 }
 
+.lefty {
+  margin: 0 auto;
+}
 .topper-2 {
   margin-top: 7px;
+}
+
+.bottomer {
+  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.homey {
+  background-color: #f0d78f;
 }
 
 
@@ -83,23 +88,67 @@ div.statuses_show {
   background-color: #97acf0;
 }
 
-div.statuses_home {
-  padding: 20px 10px;
+.bluey-text {
+  color: #97acf0;
+}
+
+.status_control {
+  max-width: 270px;
+}
+
+div.statuses_show {
+  padding: 30px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  color:#f08345;
+  display: inline-block;
+  text-align: centre !important;
+  border-color: 5px solid #fff;
+  border-radius: 6px;
+  background-color: #FFCC66;
+  min-height: 320px;
+  min-width: 300px;
+}
+
+div.status_featured {
+  padding: 30px;
   margin: 10px;
   font-size: 18px;
   font-weight: 200;
   line-height: 24px;
-  color: #fff;
   display: inline-block;
   border-color: 5px solid #fff;
   border-radius: 6px;
   background-color: #f0d78f;
-  min-height: 400px;
+  -moz-box-shadow: 6px 5px #ededc6;
+  -webkit-box-shadow: 6px 5px #ededc6;
+  box-shadow: 6px 5px #ededc6;
+}
+
+div.statuses_home {
+  padding: 20px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #ed6731;
+  display: inline-block;
+  border-color: 5px solid #fff;
+  border-radius: 6px;
+  background-color: #f0d78f;
+  min-height: 420px;
   min-width: 300px;
+
+}
+
+div.tab-pane {
+  width: 100%;
 }
 
 div.statuses_bluey {
-  padding: 20px 10px;
+  padding: 20px;
   margin: 10px;
   font-size: 18px;
   font-weight: 200;
@@ -109,8 +158,9 @@ div.statuses_bluey {
   border-color: 5px solid #fff;
   border-radius: 6px;
   background-color: #97acf0;
-  min-height: 400px;
+  min-height: 420px;
   min-width: 300px;
+
 }
 
 
@@ -162,6 +212,28 @@ input {
   border-radius: 6px;
 }
 
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+#status_category {
+  border: none;
+  height: 30px;
+}
+
+#user_occupation {
+  border: none;
+  height: 30px;
+}
+
+li.checkbox {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+
 select{
   width: 200px;
   padding: 10px;
@@ -178,8 +250,12 @@ select{
 
 }
 
-.btn-primary {
+.btn-success {
+  background-color:#839bdb;
+  border: none;
+}
 
+.btn-primary {
   background-color: #FF00FF;
   border: none;
 }
@@ -217,7 +293,8 @@ div.lemon {
   color: #F15A24;
   background-color: #FFCC66;
   width: 100%;
-  padding: 20px 80px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 div.reddish {
@@ -242,6 +319,7 @@ div.container-wbvg {
 
 .lemon {
     color: #FFCC66;
+    padding: 30px;
 }
 
 /* ========= Devise#New Sign-Up =========== */
@@ -268,5 +346,4 @@ div.signup_unit {
        -moz-border-radius: 6px;
             border-radius: 6px;
 }
-
 

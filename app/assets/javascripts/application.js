@@ -17,6 +17,7 @@
 //= require holder
 //= require morris
 //= require tab
+//= require rails.validations
 
 
 // $(function(){ $(document).(); });

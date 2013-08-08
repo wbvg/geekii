@@ -1,6 +1,26 @@
-<%= render 'form' %>
+<div class="lemon">
+<div class="container marketing">
+  <div class="row">
+    <div class="col-lg-5">
+      <%= render 'form' %>
+    </div>
 
- <div class="lemon">
+    <div class="col-lg-7">
+        <h1>Last Geekii Status</h1>
+        <% if @status_last.need_help? %>
+          <%= render 'latest_dufus' %>
+            <% else %>
+          <%= render 'latest_know_owl' %>
+        <% end %>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="lemon">
+  <div class="container marketing">
+    <h1>Statuses</h1>
       <ul class="nav nav-tabs nav-justified"  id="myTab">
       <li class="active"><a href="#all">Latest All</a></li>
       <li><a href="#dufus">Help Dufus</a></li>
@@ -20,4 +40,6 @@
         <%= render 'home/tab-owl' %>
         </div>
       </div>
+
+    </div>
   </div>

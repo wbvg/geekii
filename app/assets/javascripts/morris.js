@@ -5,36 +5,29 @@ $(document).ready(function () {
     $.ajax({
       dataType: 'json',
       type: 'get',
-      url: '/exercises/chart/' + activity
-    }).done(process_activity);
+      url: '/profiles/chart/' + label
+    }).done(process_skill);
   };
 
-  var process_activity = function (exercises) {
-    $('#chart').empty();
-    new Morris.Line({
-      element: 'chart',
-      data: exercises,
-      xkey: 'completed',
-      ykeys: ['value'],
+  var process_skill = function (profiles) {
+    $('#donut-chart').empty();
+    new Morris.Donut({
+      element: 'donut-chart',
+      data: profiles,
+      xkey: 'label',
+      ykeys: ['label'],
       labels: ['Value']
     });
   };
 
-(show_chart);
-  // $('#show_chart').click(show_chart).trigger('click');
+  $('#show_chart').click(show_chart).trigger('click');
 });
 
-
-/*
- * Play with this code and it'll update in the panel opposite.
- *
- * Why not try some of the options above?
- */
-Morris.Donut({
-  element: 'donut-example',
-  data: [
-    {label: "Download Sales", value: 12},
-    {label: "In-Store Sales", value: 30},
-    {label: "Mail-Order Sales", value: 20}
-  ]
-});
+// Morris.Donut({
+//   element: 'donut-example',
+//   data: [
+//     {label: "Download Sales", value: 12},
+//     {label: "In-Store Sales", value: 30},
+//     {label: "Mail-Order Sales", value: 20}
+//   ]
+// });

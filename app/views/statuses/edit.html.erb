@@ -1,22 +1,3 @@
-
-<!-- <div class="form-unit">
-  <form method='post' action='<!%= mountain_path(@mountain.id) %> '>
-    <input value=' <!%= @mountain.name %>' type='text' name='mountain[name]'>
-    <input value=' <!%= @mountain.image %>' type='text' name='mountain[image]'>
-    <input value=' <!%= @mountain.country %>' type='text' name='mountain[country]'>
-    <input value=' <!%= @mountain.height %>' type='text' name='mountain[height]'>
-    <button class="btn btn-success">Update</button>
-</form>
-</div>
-
- -->
-<!%= form_for(status, :as => <!-- edit_status, :url => edit_status_path(@status.id), :html => { :method => :post }) do |f| %> -->
-<!--
-    <!%= form_for(  edit_status(@status.id), :method => :post ) do |f| %> -->
-
 <div class="container marketing">
-    <h1>Edit status whoa!</h1>
-
-    <%= render 'form_edit' %>
-
+  <%= render 'form_edit' %>
 </div>

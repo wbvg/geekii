@@ -1,0 +1,11 @@
+<div class="status_featured">
+
+<li><b>Geekii</b> posted: <%= time_ago_in_words(@status_last.created_at) + " ago" %> |  by <%= link_to(@status_last.user.username, @status_last.user ) %></li>
+<li class="topper"><b>Category:</b> <%= @status_last.category %></li>
+    <li><i>"<%= @status_last.status %>"</i></li>
+
+<%= image_tag(@status_last.user.avatar, :class => "profile" ) %>
+<a href="#" data-toggle="tooltip" title="Oh boii I need help" class="btn-group"><%= image_tag('../images/dufus_mini.png' ) %></a>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I need some help</button>
+
+</div>

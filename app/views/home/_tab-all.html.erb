@@ -1,6 +1,7 @@
 <% @statuses.each do |status| %>
+
   <% if status.need_help? %>
-    <div class="statuses_bluey col-lg-3">
+    <div class="statuses_bluey col-lg-5">
       <ul>
         <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
 
@@ -12,15 +13,15 @@
         <%= link_to(status.user.username, status.user ) %></button></li>
 
         <li class="topper"><%= status.category %></li>
-        <li><i>"<%= status.status %>"</i></li>
+        <li class="status_control"><i>"<%= @user_status_caps %>"</i></li>
         <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
       </ul>
     </div>
 
   <% else %>
-    <div class="statuses_home col-lg-3">
+    <div class="statuses_home col-lg-5">
       <ul>
-        <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
+        <li><%= image_tag(status.user_avatar, :class => "profile" ) %>
 
         <%= image_tag('../images/owl_upears_mini.png' ) %>
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button>
@@ -29,7 +30,7 @@
         <%= link_to(status.user.username, status.user ) %></button></li>
 
         <li class="topper"><%= status.category %></li>
-        <li><i>"<%= status.status %>"</i></li>
+        <li><i>"<%= @user_status_caps %>"</i></li>
         <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
       </ul>
     </div>
@@ -40,8 +41,17 @@
 <div class="row">
   <div class="paginate col-lg-12">
     <ul class="pagination pagination-large">
+      <li><%= will_paginate @statuses, :page_links => false %></li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<div class="row">
+  <div class="paginate col-lg-12">
+    <ul class="pagination pagination-large">
       <li><a href="#">&laquo;</a></li>
       <li><a href="#">&raquo;</a></li>
     </ul>
   </div>
-</div>
+</div> -->

@@ -1,5 +1,6 @@
- <div class="container marketing">
-  <h1> Create a Status</h2>
+ <div class="lemon">
+  <div class="status-container">
+    <h1>Edit status whoops!</h1>
 
     <%= form_for @status do |f| %>
         <% flash.each do |name,msg| %>
@@ -15,12 +16,12 @@
 
 <li>
     <%= f.label :need_help, 'Need help?' %>
-    <%= check_box_tag :need_help %></li>
+    <%= f.check_box :need_help %></li>
     <%= f.submit :class => "btn btn-primary btn-large" %>
 
     <% end %>
 
 <br>
 <%= link_to 'Back', root_path %>
-
+</div>
 </div>

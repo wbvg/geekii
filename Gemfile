@@ -9,11 +9,14 @@ gem 'rails', '3.2.14'
 gem 'pg', '~>0.15.1'
 gem 'devise'
 gem 'simple_form'
+gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'json'
 gem "paperclip", "~> 3.0"
 gem 'devise'
 gem 'will_paginate', '~> 3.0.0'
+gem 'js-routes'
+gem 'haml'
 # testing
 
 # Bundle edge Rails instead:
@@ -33,11 +36,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
   gem "database_cleaner", :group => :test
   gem "email_spec", :group => :test
   gem "factory_girl_rails", :group => :test
+  gem 'simplecov', :require => false, :group => :test
+  gem 'client_side_validations'
 
 group :development, :test do
   gem 'rspec-rails'

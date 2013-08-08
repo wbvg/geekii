@@ -1,19 +1,21 @@
 class UsersController < ApplicationController
-    before_filter :authenticate_user!
+    before_filter :authenticate_user!, :except => [:show,:index]
 
   def index
     @users = User.all
+    @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
   end
 
   def show
     @user = User.find(params[:id])
-    @statuses = Status.all
+    @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
   end
 
     def new
       @user = User.new
       @users = User.all
-      @statuses = Status.all
+      @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
+      @user_status_caps = status.status
     end
 
    # def create

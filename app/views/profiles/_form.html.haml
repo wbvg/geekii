@@ -1,0 +1,12 @@
+%div.row
+  %div.col-lg-4
+    = form_for @profile, :validate => true, :remote => true do |f|
+      = yield(:user_validators, class: 'alert-error')
+      = f.label :chapter 'Chapter name'
+      = f.text_field :chapter, :autofocus => true
+      = f.label :label 'Select a Skill'
+      = f.text_field :label
+      = f.label :value 'Pick a number value out of 100 of your known skill'
+      = f.text_field :value
+      = f.submit nil, :class => 'btn btn-success'
+  %div.col-lg-4

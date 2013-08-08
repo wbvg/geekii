@@ -32,7 +32,7 @@
 		        <!%= link_to 'Edit ' + current_user.username, edit_user_registration_path, :class =>
                     <a href="<%= edit_user_registration_path %>" class="btn btn-success lefty"><span>Edit  </span><%= current_user.username %></a>
 
-		        <%= link_to "Logout", logout_path , :class => 'btn btn-danger' %>
+		        <%= link_to "Logout", logout_path, :data => { :confirm => "Are you sure? We will miiss you!" }, :class => 'btn btn-danger' %>
                   </li>
                 </ul>
               </div>

@@ -1,18 +1,14 @@
 class HomeController < ApplicationController
-    def index
+  def index
     @users = User.all
-     @statuses = Status.all
-     # @status = current_user.statuses.create(params[:status])
-    # def user_avatar
-    #   user.avatar if user
-    # end
+    @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
+
 
 
   end
 
   def show
     @user = User.find(params[:id])
-    @statuses = Status.all
   end
 
 

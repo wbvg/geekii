@@ -1,6 +1,6 @@
 <% @user.statuses.each do |status| %>
 <% if !status.need_help? %>
-  <div class="statuses_home col-lg-3 reddy">
+  <div class="statuses_home col-lg-5 reddy">
     <ul>
     <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
      <%= image_tag('../images/owl_upears_mini.png' ) %>
@@ -27,8 +27,16 @@
 <div class="row">
   <div class="paginate col-lg-12">
     <ul class="pagination pagination-large">
+      <li><%= will_paginate @statuses, :page_links => false %></li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="paginate col-lg-12">
+    <ul class="pagination pagination-large">
       <li><a href="#">&laquo;</a></li>
       <li><a href="#">&raquo;</a></li>
     </ul>
   </div>
-</div>
+</div> -->
