@@ -1,9 +1,11 @@
 <div class="lemon">
 <div class="container marketing">
   <div class="row">
+     <% if user_signed_in? %>
     <div class="col-lg-5">
-      <%= render 'form' %>
+        <%= render 'form' %>
     </div>
+    <% end %>
 
     <div class="col-lg-7">
         <h1>Last Geekii Status</h1>

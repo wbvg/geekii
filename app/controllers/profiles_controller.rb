@@ -13,8 +13,9 @@ class ProfilesController < ApplicationController
   def create
     profile = Profile.create(params[:profile])
     current_user.profiles << profile
-    @profiles = @user.profiles.order(:chapter).order(:created_at)
-    @chapters = @user.profiles.map(&:chapter).uniq.sort
+    redirect_to(user)
+    @profiles = current_user.profiles.order(:chapter).order(:created_at)
+    @chapters = current_user.profiles.map(&:chapter).uniq.sort
   end
 
   def chart

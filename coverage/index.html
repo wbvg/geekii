@@ -14,27 +14,27 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-08-09T01:10:27+10:00">2013-08-09T01:10:27+10:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-08-10T23:47:14+10:00">2013-08-10T23:47:14+10:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.08%</span></span>
+    (<span class="covered_percent"><span class="green">98.58%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.99
+       <span class="green">
+         1.29
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>8</b> files in total.
-    <b>152</b> relevant lines. 
-    <span class="green"><b>143</b> lines covered</span> and
-    <span class="red"><b>9</b> lines missed </span>
+    <b>9</b> files in total.
+    <b>211</b> relevant lines. 
+    <span class="green"><b>208</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#4bb6aa509f6dfd1bee99b50bb5b4ac156540b643" class="src_link" title="spec/controllers/home_controller_spec.rb">spec/controllers/home_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
+        <td>19</td>
         <td>9</td>
         <td>9</td>
         <td>0</td>
@@ -63,21 +63,21 @@
       <tr>
         <td class="strong"><a href="#fe7e94157c749bcea3531b10aa15fce3445a22ff" class="src_link" title="spec/controllers/statuses_controller_spec.rb">spec/controllers/statuses_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>39</td>
-        <td>11</td>
-        <td>11</td>
+        <td>49</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#96ca4c657e271e189b898947fe8f06754a39e755" class="src_link" title="spec/controllers/users_controller_spec.rb">spec/controllers/users_controller_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>43</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">75.0 %</td>
+        <td>48</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -91,21 +91,31 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#4c322955cd434df4a577bc710ca46d4fccf62322" class="src_link" title="spec/models/profile_spec.rb">spec/models/profile_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>88</td>
+        <td>46</td>
+        <td>46</td>
+        <td>0</td>
+        <td>3.7</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#7b9561c76638fd55afaaede213102cd1f0923a73" class="src_link" title="spec/models/status_spec.rb">spec/models/status_spec.rb</a></td>
-        <td class="red strong">74.19 %</td>
-        <td>76</td>
-        <td>31</td>
-        <td>23</td>
-        <td>8</td>
-        <td>1.1</td>
+        <td class="green strong">100.0 %</td>
+        <td>94</td>
+        <td>41</td>
+        <td>41</td>
+        <td>0</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1433b60805918ab92ffc8269a0f3760db9bf3cf0" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
-        <td class="green strong">98.95 %</td>
-        <td>226</td>
-        <td>95</td>
-        <td>94</td>
+        <td class="green strong">98.97 %</td>
+        <td>230</td>
+        <td>97</td>
+        <td>96</td>
         <td>1</td>
         <td>1.6</td>
       </tr>
@@ -172,97 +182,103 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">describe HomeController do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before (:each) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user = FactoryGirl.create(:user)</code>
+          <code class="ruby">  before (:each) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    sign_in @user</code>
+          <code class="ruby">    @user = FactoryGirl.create(:user)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    sign_in @user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;GET 'index'&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;should be successful&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index</code>
+          <code class="ruby">    it &quot;should be successful&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">      response.should be_success</code>
+          <code class="ruby">      get :index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      response.should be_success</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
@@ -277,8 +293,8 @@
     <h3>spec/controllers/statuses_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -292,10 +308,10 @@
           <code class="ruby">require 'spec_helper'</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">require 'status'</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -328,8 +344,8 @@
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :index</code>
         </li>
@@ -349,133 +365,133 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">     it &quot;should be successful&quot; do</code>
+          <code class="ruby">   it &quot;should have a status attribute&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index</code>
+          <code class="ruby">     expect(assigns(:statuses)).to be</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      response.should be_success</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    context 'when not valid' do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    it { should respond_with 422 }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    # context 'when not valid' do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    # it { should respond_with 422 }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    #   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    # it &quot;should be logged in to post a status&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    #   post :create, status: { status: &quot;Hi I need help&quot;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    #   assert_response :redirect</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   assert_redirected_to new_user_session_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">    # it &quot;should be successful&quot; do</code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">    #   get :index</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">    #   response.should be_success</code>
+          <code class="ruby">    # it &quot;should create status when logged in&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">    # end</code>
+          <code class="ruby">    #   sign_in users(:willy)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   assert_difference ('Status.count') do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">    # it &quot;should be successful&quot; do</code>
+          <code class="ruby">    #     post :create, status: { status: @status_attr }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">    #   get :new</code>
+          <code class="ruby">    #   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">    #   response.should be_success</code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">    # end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
@@ -487,37 +503,97 @@
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">    # it &quot;should be successful&quot; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">    #   get :edit</code>
+          <code class="ruby">    # it &quot;should be successful&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">    #   response.should be_success</code>
+          <code class="ruby">    #   get :index</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">    # end</code>
+          <code class="ruby">    #   response.should be_success</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">    # it &quot;should be successful&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    #   get :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    #   response.should be_success</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    # it &quot;should be successful&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    #   get :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">    #   response.should be_success</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">    # end</code>
         </li>
       
     </ol>
@@ -527,11 +603,11 @@
         <div class="source_table" id="96ca4c657e271e189b898947fe8f06754a39e755">
   <div class="header">
     <h3>spec/controllers/users_controller_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">75.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -700,76 +776,76 @@
           <code class="ruby">require 'spec_helper'</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require 'user'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">describe UsersController do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   describe &quot;GET 'show'&quot; do</code>
+          <code class="ruby">    describe &quot;GET 'show' &quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">        get :show</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">  #    it &quot;should be successful&quot; do</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">  #     get :show</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">  #     response.should be_success</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">  #   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;should respond with a status 200&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">        expect(response).to be_success</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">        expect(response.status).to eq(200)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -781,19 +857,49 @@
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      # it &quot;should give the statuses in an instance variable in reverse order&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      #   expect(assigns(:statuses)).to be</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">      #   expect(assigns(:statuses).first.class).to eq(Status)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">      #   # expect(assigns(:statuses).first.name).to eq(&quot;Fruit number 2&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
     </ol>
@@ -884,14 +990,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="7b9561c76638fd55afaaede213102cd1f0923a73">
+        <div class="source_table" id="4c322955cd434df4a577bc710ca46d4fccf62322">
   <div class="header">
-    <h3>spec/models/status_spec.rb</h3>
-    <h4><span class="red">74.19 %</span> covered</h4>
+    <h3>spec/models/profile_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>31</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <b>46</b> relevant lines. 
+      <span class="green"><b>46</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -913,97 +1019,97 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">describe Status do</code>
+          <code class="ruby">describe Profile do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
-          
-          <code class="ruby"> it { should belongs_to :users }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="6">
+          <span class="hits">12</span>
+          
+          <code class="ruby">    @profile_attr = {</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  # == Schema Information</code>
+          <code class="ruby">      :user_id =&gt; &quot;1&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">      :chapter =&gt; &quot;General Assembly&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"># Table name: statuses</code>
+          <code class="ruby">      :label =&gt; &quot;Javascript&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">      :value =&gt; 100</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">#  id         :integer          not null, primary key</code>
+          <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="12" data-linenumber="12">
+          <span class="hits">12</span>
           
-          
-          <code class="ruby">#  user_id    :integer</code>
+          <code class="ruby">      @profile = Profile.create(@profile_attr)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">#  category   :string(255)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">#  status     :string(255)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">#  need_help  :boolean          default(FALSE)</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#  created_at :datetime         not null</code>
+          <code class="ruby">describe &quot;profile belongs to user relationship test&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">#  updated_at :datetime         not null</code>
+          <code class="ruby">     it { should belong_to :user }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -1012,34 +1118,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # def initialize</code>
+          <code class="ruby">  describe &quot;user id&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #   @status_attr</code>
+          <code class="ruby">       it &quot;should have a user id attribute&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # e nd</code>
+          <code class="ruby">        @profile.user_id.should eq (1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">       end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby"> describe &quot;A status&quot; do</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -1048,76 +1154,76 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before(:each) do</code>
-        </li>
-      
-        <li class="covered" data-hits="6" data-linenumber="27">
-          <span class="hits">6</span>
-          
-          <code class="ruby">    @status_attr = {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">      :user_id =&gt; &quot;1&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">      :category =&gt; &quot;UX | UI Designer&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">      :status =&gt; &quot;Hi I need help&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">      :need_help =&gt; &quot;f&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;chapter&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should have a chapter attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @profile.chapter.should eq (&quot;General Assembly&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 40 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 41</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
-          <code class="ruby">    before(:each) do</code>
+          <code class="ruby">        hash = @profile_attr.merge(:chapter =&gt; max_characters)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="36">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          <code class="ruby">        @status= Status.new(@status_attr)</code>
+          <code class="ruby">        Profile.new(hash).should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
@@ -1129,61 +1235,61 @@
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should be logged in to post a status&quot; do</code>
+          <code class="ruby">      it &quot;should accept under 40 character limit strings&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, status: { status: &quot;Hi I need help&quot;}</code>
+          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      assert_response :redirect</code>
+          <code class="ruby">        hash = @profile_attr.merge(:chapter =&gt; max_characters)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      assert_redirected_to new_user_session_path</code>
+          <code class="ruby">        Profile.new(hash).should be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">   end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="45">
           
-          <code class="ruby">    it &quot;should create status when logged in&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">      sign_in users(:willy)</code>
+          <code class="ruby">  describe &quot;label&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      assert_difference ('Status.count') do</code>
+          <code class="ruby">       it &quot;should have a chapter attribute&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        post :create, status: { status: @status_attr }</code>
+          <code class="ruby">        @profile.label.should eq (&quot;Javascript&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -1195,7 +1301,553 @@
         <li class="never" data-hits="" data-linenumber="50">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 30 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 31</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @profile_attr.merge(:label =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Profile.new(hash).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should accept under 30 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @profile_attr.merge(:label =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Profile.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     describe &quot;value&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should have a value attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @profile.value.should eq (100)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 3 character limit&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;1&quot; * 45</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @profile_attr.merge(:value =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Profile.new(hash).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should accept integer character limit&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;1&quot; * 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @profile_attr.merge(:value =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Profile.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should allow valid value values&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      (1..100).to_a.each do |v|</code>
+        </li>
+      
+        <li class="covered" data-hits="100" data-linenumber="83">
+          <span class="hits">100</span>
+          
+          <code class="ruby">       should allow_value(v).for(:value)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="7b9561c76638fd55afaaede213102cd1f0923a73">
+  <div class="header">
+    <h3>spec/models/status_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>41</b> relevant lines. 
+      <span class="green"><b>41</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # == Schema Information</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"># Table name: statuses</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#  id         :integer          not null, primary key</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#  user_id    :integer</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#  category   :string(255)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#  status     :string(255)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#  need_help  :boolean          default(FALSE)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">#  created_at :datetime         not null</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">#  updated_at :datetime         not null</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby"> describe Status do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="19">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @status_attr = {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">      :user_id =&gt; &quot;1&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">      :category =&gt; &quot;UX | UI Designer&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      :status =&gt; &quot;Hi I need help&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">      :need_help =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="25">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      @status = Status.create(@status_attr)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;status belongs to user relationship test&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
+          <code class="ruby">     it { should belong_to :user }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;category&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should have a category attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @status.category.should eq (&quot;UX | UI Designer&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 40 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 41</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @status_attr.merge(:category =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Status.new(hash).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should accept under 40 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @status_attr.merge(:category =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Status.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
@@ -1207,151 +1859,259 @@
         <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should create a new instance given a valid attribute&quot; do</code>
+          <code class="ruby">    describe &quot;status&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    Status.create!(@status_attr)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 200 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 201</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;should have a status with a user id&quot; do</code>
+          <code class="ruby">        hash = @status_attr.merge(:status =&gt; max_characters)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">    status = Status.new</code>
+          <code class="ruby">        Status.new(hash).should_not be_valid</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @status_attr.status = &quot;Hi I need help&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
-          
-          <code class="ruby">    assert !status.save</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
-          
-          <code class="ruby">    assert !status.errors[:user_id].empty?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;status requires all content&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      status = Status.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      assert status.save</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
-          
-          <code class="ruby">      assert status.errors[:status].empty?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="70">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      it &quot;should have a category attribute&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      status = Status.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @status_attr.should respond_to(:category)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="73">
-          
-          
-          <code class="ruby">      @status_attr.category?.should == true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should accept under 200 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @status_attr.merge(:status =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Status.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should create a new instance given a valid attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Status.create!(@status_attr)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;user id&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should have a user id attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @status.user_id.should eq (1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby"> describe &quot;need_help&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;should accept&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">        # @status.need_help.should eq (true)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        need_help = true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @status_attr.merge(:need_help =&gt; need_help)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Status.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        it &quot;should reject non boolean&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby">        # @status.need_help.should eq (true)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        need_help = (&quot;strine&quot; &amp;&amp; 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @status_attr.merge(:need_help =&gt; need_help)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Status.new(hash).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -1361,10 +2121,10 @@
         <div class="source_table" id="1433b60805918ab92ffc8269a0f3760db9bf3cf0">
   <div class="header">
     <h3>spec/models/user_spec.rb</h3>
-    <h4><span class="green">98.95 %</span> covered</h4>
+    <h4><span class="green">98.97 %</span> covered</h4>
     <div>
-      <b>95</b> relevant lines. 
-      <span class="green"><b>94</b> lines covered</span> and
+      <b>97</b> relevant lines. 
+      <span class="green"><b>96</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -1549,187 +2309,187 @@
         <li class="never" data-hits="" data-linenumber="30">
           
           
+          <code class="ruby">   # it { should have_attached_file(:avatar) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">  before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="32">
-          <span class="hits">24</span>
+        <li class="covered" data-hits="26" data-linenumber="33">
+          <span class="hits">26</span>
           
           <code class="ruby">    @login_attr = {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">      :username =&gt; &quot;Willy&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">      :location =&gt; &quot;Sydney&quot;,</code>
+          <code class="ruby">      :username =&gt; &quot;Willy&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">      :occupation =&gt; &quot;UX | UI Designer&quot;,</code>
+          <code class="ruby">      :location =&gt; &quot;Sydney&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">      :email =&gt; &quot;user@example.com&quot;,</code>
+          <code class="ruby">      :occupation =&gt; &quot;UX | UI Designer&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">      :password =&gt; &quot;123456&quot;,</code>
+          <code class="ruby">      :email =&gt; &quot;user@example.com&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">      :password_confirmation =&gt; &quot;123456&quot;,</code>
+          <code class="ruby">      :password =&gt; &quot;123456&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">      :avatar_file_name =&gt; &quot;willy_fb_profile.jpg&quot;,</code>
+          <code class="ruby">      :password_confirmation =&gt; &quot;123456&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">      :avatar_content_type =&gt; &quot;image/jpeg&quot;,</code>
+          <code class="ruby">      :avatar_file_name =&gt; &quot;willy_fb_profile.jpg&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">      :avatar_file_size =&gt; &quot;38103&quot;</code>
+          <code class="ruby">      :avatar_content_type =&gt; &quot;image/jpeg&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
+          <code class="ruby">      :avatar_file_size =&gt; &quot;38103&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
           <code class="ruby">    }</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="43">
-          <span class="hits">24</span>
+        <li class="covered" data-hits="26" data-linenumber="44">
+          <span class="hits">26</span>
           
           <code class="ruby">    @user = User.new(@login_attr)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
           
-          <code class="ruby">  def valid_attributes</code>
+          <code class="ruby">    it { should have_many :statuses }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">        # Test avatar next</code>
+          <code class="ruby">    it { should have_many :profiles }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">      :avatar_file_name =&gt; &quot;willy_fb_profile.jpg&quot;,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      :avatar_content_type =&gt; &quot;image/jpeg&quot;,</code>
+          <code class="ruby">  def valid_attributes</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">      :avatar_file_size =&gt; &quot;38103&quot;,</code>
+          <code class="ruby">    {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">      :avatar_file_name =&gt; fixture_file_upload('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')</code>
+          <code class="ruby">        # Test avatar next</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">      :avatar_file_name =&gt; &quot;willy_fb_profile.jpg&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      :avatar_content_type =&gt; &quot;image/jpeg&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
+          <code class="ruby">      :avatar_file_size =&gt; &quot;38103&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">      :avatar_file_name =&gt; fixture_file_upload('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg')</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;avatar&quot; do</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;should accept valid avatar&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @avatar_attr = { :avatar_file_name =&gt; Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg') }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
@@ -1738,28 +2498,28 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    it &quot;should accept valid avatar&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should be valid avatar&quot; do</code>
+          <code class="ruby">      @avatar_attr = { :avatar_file_name =&gt; Rack::Test::UploadedFile.new('spec/fixtures/willy_fb_profile.jpg', 'image/jpeg') }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="64">
           
-          <code class="ruby">      @avatar_attr = { :avatar =&gt; File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
@@ -1768,136 +2528,136 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    it &quot;should be valid avatar&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @avatar_attr = { :avatar =&gt; File.join(Rails.root, 'spec', 'fixtures', 'file.jpeg') }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="71">
           
-          <code class="ruby">  describe &quot;username&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="70">
-          <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;should have a username attribute&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @user.username.should eq (&quot;Willy&quot;)</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  describe &quot;username&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;should reject over 20 character limit strings&quot; do</code>
+          <code class="ruby">      it &quot;should have a username attribute&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="75">
           <span class="hits">1</span>
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 21</code>
+          <code class="ruby">      @user.username.should eq (&quot;Willy&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="76">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        hash = @login_attr.merge(:username =&gt; max_characters)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="77">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        User.new(hash).should_not be_valid</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject over 20 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 21</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;should accept under 20 character limit strings&quot; do</code>
+          <code class="ruby">        hash = @login_attr.merge(:username =&gt; max_characters)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="81">
           <span class="hits">1</span>
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
+          <code class="ruby">        User.new(hash).should_not be_valid</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        hash = @login_attr.merge(:username =&gt; max_characters)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        User.new(hash).should be_valid</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="85">
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="87">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="88">
+        <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
-          <code class="ruby"> describe &quot;email&quot; do</code>
+          <code class="ruby">      it &quot;should accept under 20 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        max_characters = &quot;a&quot; * 18</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        hash = @login_attr.merge(:username =&gt; max_characters)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        User.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
@@ -1906,298 +2666,298 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="90">
           
-          <code class="ruby">  it &quot;should require an email address&quot; do</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="91">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="91">
           
-          <code class="ruby">    no_email_user = User.new(@login_attr.merge(:email =&gt; &quot;&quot;))</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="92">
           <span class="hits">1</span>
           
-          <code class="ruby">    no_email_user.should_not be_valid</code>
+          <code class="ruby">     describe &quot;email&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      it &quot;should require an email address&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="95">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;should accept valid email addresses&quot; do</code>
+          <code class="ruby">        no_email_user = User.new(@login_attr.merge(:email =&gt; &quot;&quot;))</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">    addresses = %w[user@foo.com THE_USER@foo.bar.org first.last@foo.jp]</code>
+          <code class="ruby">        no_email_user.should_not be_valid</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="97">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="97">
           
-          <code class="ruby">    addresses.each do |address|</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="98">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      valid_email_user = User.new(@login_attr.merge(:email =&gt; address))</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="99">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      valid_email_user.should be_valid</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="100">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="101">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="102">
+        <li class="never" data-hits="" data-linenumber="98">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="103">
+        <li class="covered" data-hits="1" data-linenumber="99">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;should reject invalid email addresses&quot; do</code>
+          <code class="ruby">      it &quot;should accept valid email addresses&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="104">
+        <li class="covered" data-hits="1" data-linenumber="100">
           <span class="hits">1</span>
           
-          <code class="ruby">    addresses = %w[user@foo,com user_at_foo.org example.user@foo.]</code>
+          <code class="ruby">        addresses = %w[user@foo.com THE_USER@foo.bar.org first.last@foo.jp]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="105">
+        <li class="covered" data-hits="1" data-linenumber="101">
           <span class="hits">1</span>
           
-          <code class="ruby">    addresses.each do |address|</code>
+          <code class="ruby">        addresses.each do |address|</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="106">
+        <li class="covered" data-hits="3" data-linenumber="102">
           <span class="hits">3</span>
           
-          <code class="ruby">      invalid_email_user = User.new(@login_attr.merge(:email =&gt; address))</code>
+          <code class="ruby">          valid_email_user = User.new(@login_attr.merge(:email =&gt; address))</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="107">
+        <li class="covered" data-hits="3" data-linenumber="103">
           <span class="hits">3</span>
           
-          <code class="ruby">      invalid_email_user.should_not be_valid</code>
+          <code class="ruby">          valid_email_user.should be_valid</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="108">
+        <li class="never" data-hits="" data-linenumber="104">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="110">
+        <li class="never" data-hits="" data-linenumber="106">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="111">
+        <li class="covered" data-hits="1" data-linenumber="107">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;should reject duplicate email addresses&quot; do</code>
+          <code class="ruby">      it &quot;should reject invalid email addresses&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="112">
+        <li class="covered" data-hits="1" data-linenumber="108">
           <span class="hits">1</span>
           
-          <code class="ruby">    User.create!(@login_attr)</code>
+          <code class="ruby">        addresses = %w[user@foo,com user_at_foo.org example.user@foo.]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="113">
+        <li class="covered" data-hits="1" data-linenumber="109">
           <span class="hits">1</span>
           
-          <code class="ruby">    user_with_duplicate_email = User.new(@login_attr)</code>
+          <code class="ruby">        addresses.each do |address|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="114">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="110">
+          <span class="hits">3</span>
           
-          <code class="ruby">    user_with_duplicate_email.should_not be_valid</code>
+          <code class="ruby">          invalid_email_user = User.new(@login_attr.merge(:email =&gt; address))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="covered" data-hits="3" data-linenumber="111">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">          invalid_email_user.should_not be_valid</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should reject duplicate email addresses&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="116">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        User.create!(@login_attr)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="117">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &quot;should reject email addresses identical up to case&quot; do</code>
+          <code class="ruby">        user_with_duplicate_email = User.new(@login_attr)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="118">
           <span class="hits">1</span>
           
-          <code class="ruby">    upcased_email = @login_attr[:email].upcase</code>
+          <code class="ruby">        user_with_duplicate_email.should_not be_valid</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="119">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="119">
           
-          <code class="ruby">    User.create!(@login_attr.merge(:email =&gt; upcased_email))</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="120">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="120">
           
-          <code class="ruby">    user_with_duplicate_email = User.new(@login_attr)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="121">
           <span class="hits">1</span>
           
-          <code class="ruby">    user_with_duplicate_email.should_not be_valid</code>
+          <code class="ruby">      it &quot;should reject email addresses identical up to case&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="covered" data-hits="1" data-linenumber="122">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">        upcased_email = @login_attr[:email].upcase</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="123">
+        <li class="covered" data-hits="1" data-linenumber="123">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">end</code>
+          <code class="ruby">        User.create!(@login_attr.merge(:email =&gt; upcased_email))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="124">
+        <li class="covered" data-hits="1" data-linenumber="124">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">        user_with_duplicate_email = User.new(@login_attr)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="125">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;passwords&quot; do</code>
+          <code class="ruby">        user_with_duplicate_email.should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="126">
           
           
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="127">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="128">
           
-          <code class="ruby">    before(:each) do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="128">
-          <span class="hits">2</span>
           
-          <code class="ruby">      @user = User.new(@login_attr)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="129">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="130">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="131">
+        <li class="covered" data-hits="1" data-linenumber="130">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should have a password attribute&quot; do</code>
+          <code class="ruby">    describe &quot;passwords&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="132">
           <span class="hits">1</span>
           
-          <code class="ruby">      @user.should respond_to(:password)</code>
+          <code class="ruby">      before(:each) do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="133">
+        <li class="covered" data-hits="2" data-linenumber="133">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">        @user = User.new(@login_attr)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="134">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="135">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="135">
           
-          <code class="ruby">    it &quot;should have a password confirmation attribute&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="136">
           <span class="hits">1</span>
           
-          <code class="ruby">      @user.should respond_to(:password_confirmation)</code>
+          <code class="ruby">      it &quot;should have a password attribute&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="137">
+        <li class="covered" data-hits="1" data-linenumber="137">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">        @user.should respond_to(:password)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="138">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="139">
@@ -2209,103 +2969,103 @@
         <li class="covered" data-hits="1" data-linenumber="140">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;password validations&quot; do</code>
+          <code class="ruby">      it &quot;should have a password confirmation attribute&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="141">
+        <li class="covered" data-hits="1" data-linenumber="141">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @user.should respond_to(:password_confirmation)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="143">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="142">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;should require a password&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="143">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      User.new(@login_attr.merge(:password =&gt; &quot;&quot;, :password_confirmation =&gt; &quot;&quot;)).</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="144">
           
           
-          <code class="ruby">        should_not be_valid</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="145">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="146">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="147">
+        <li class="covered" data-hits="1" data-linenumber="146">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should require a matching password confirmation&quot; do</code>
+          <code class="ruby">    describe &quot;password validations&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="148">
           <span class="hits">1</span>
           
-          <code class="ruby">      User.new(@login_attr.merge(:password_confirmation =&gt; &quot;invalid&quot;)).</code>
+          <code class="ruby">      it &quot;should require a password&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="149">
+        <li class="covered" data-hits="1" data-linenumber="149">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        should_not be_valid</code>
+          <code class="ruby">        User.new(@login_attr.merge(:password =&gt; &quot;&quot;, :password_confirmation =&gt; &quot;&quot;)).</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">          should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="151">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="152">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="152">
           
-          <code class="ruby">    it &quot;should reject short passwords&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="153">
           <span class="hits">1</span>
           
-          <code class="ruby">      short = &quot;a&quot; * 5</code>
+          <code class="ruby">      it &quot;should require a matching password confirmation&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="154">
           <span class="hits">1</span>
           
-          <code class="ruby">      hash = @login_attr.merge(:password =&gt; short, :password_confirmation =&gt; short)</code>
+          <code class="ruby">        User.new(@login_attr.merge(:password_confirmation =&gt; &quot;invalid&quot;)).</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="155">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="155">
           
-          <code class="ruby">      User.new(hash).should_not be_valid</code>
+          
+          <code class="ruby">          should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="156">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="157">
@@ -2314,40 +3074,40 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="158">
+        <li class="covered" data-hits="1" data-linenumber="158">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">      it &quot;should reject short passwords&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="159">
+        <li class="covered" data-hits="1" data-linenumber="159">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">        short = &quot;a&quot; * 5</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="160">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;password encryption&quot; do</code>
+          <code class="ruby">        hash = @login_attr.merge(:password =&gt; short, :password_confirmation =&gt; short)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="161">
+        <li class="covered" data-hits="1" data-linenumber="161">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        User.new(hash).should_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="162">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="162">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    before(:each) do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="163">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      @user = User.create!(@login_attr)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="164">
@@ -2365,55 +3125,55 @@
         <li class="covered" data-hits="1" data-linenumber="166">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should have an encrypted password attribute&quot; do</code>
+          <code class="ruby">    describe &quot;password encryption&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="167">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @user.should respond_to(:encrypted_password)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="168">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="169">
+        <li class="never" data-hits="" data-linenumber="167">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="170">
+        <li class="covered" data-hits="1" data-linenumber="168">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should set the encrypted password attribute&quot; do</code>
+          <code class="ruby">      before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="171">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="169">
+          <span class="hits">2</span>
           
-          <code class="ruby">      @user.encrypted_password.should_not be_blank</code>
+          <code class="ruby">        @user = User.create!(@login_attr)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="172">
+        <li class="never" data-hits="" data-linenumber="170">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="173">
+        <li class="never" data-hits="" data-linenumber="171">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="172">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;should have an encrypted password attribute&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="173">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @user.should respond_to(:encrypted_password)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="174">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="175">
@@ -2425,31 +3185,31 @@
         <li class="covered" data-hits="1" data-linenumber="176">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;occupation&quot; do</code>
+          <code class="ruby">      it &quot;should set the encrypted password attribute&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="177">
+        <li class="covered" data-hits="1" data-linenumber="177">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        @user.encrypted_password.should_not be_blank</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="178">
-          <span class="hits">1</span>
-          
-          <code class="ruby">       it &quot;should have an occupation attribute&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="179">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @user.occupation.should eq (&quot;UX | UI Designer&quot;)</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="180">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="181">
@@ -2461,31 +3221,31 @@
         <li class="covered" data-hits="1" data-linenumber="182">
           <span class="hits">1</span>
           
-          <code class="ruby">        it &quot;should reject over 40 character limit strings&quot; do</code>
+          <code class="ruby">    describe &quot;occupation&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="183">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="183">
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 41</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="184">
           <span class="hits">1</span>
           
-          <code class="ruby">        hash = @login_attr.merge(:occupation =&gt; max_characters)</code>
+          <code class="ruby">         it &quot;should have an occupation attribute&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="185">
           <span class="hits">1</span>
           
-          <code class="ruby">        User.new(hash).should_not be_valid</code>
+          <code class="ruby">        @user.occupation.should eq (&quot;UX | UI Designer&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="186">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="187">
@@ -2497,31 +3257,31 @@
         <li class="covered" data-hits="1" data-linenumber="188">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;should accept under 40 character limit strings&quot; do</code>
+          <code class="ruby">          it &quot;should reject over 40 character limit strings&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="189">
           <span class="hits">1</span>
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 10</code>
+          <code class="ruby">          max_characters = &quot;a&quot; * 41</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="190">
           <span class="hits">1</span>
           
-          <code class="ruby">        hash = @login_attr.merge(:occupation =&gt; max_characters)</code>
+          <code class="ruby">          hash = @login_attr.merge(:occupation =&gt; max_characters)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="191">
           <span class="hits">1</span>
           
-          <code class="ruby">        User.new(hash).should be_valid</code>
+          <code class="ruby">          User.new(hash).should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="192">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="193">
@@ -2530,46 +3290,46 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="194">
+        <li class="covered" data-hits="1" data-linenumber="194">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">        it &quot;should accept under 40 character limit strings&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="195">
+        <li class="covered" data-hits="1" data-linenumber="195">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">          max_characters = &quot;a&quot; * 10</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="196">
           <span class="hits">1</span>
           
-          <code class="ruby">   describe &quot;location&quot; do</code>
+          <code class="ruby">          hash = @login_attr.merge(:occupation =&gt; max_characters)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="197">
+        <li class="covered" data-hits="1" data-linenumber="197">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          User.new(hash).should be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="198">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="199">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="198">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        it &quot;should have an occupation attribute&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="199">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @user.occupation.should eq (&quot;UX | UI Designer&quot;)</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="200">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="201">
@@ -2581,31 +3341,31 @@
         <li class="covered" data-hits="1" data-linenumber="202">
           <span class="hits">1</span>
           
-          <code class="ruby">        it &quot;should reject over 50 character limit strings&quot; do</code>
+          <code class="ruby">     describe &quot;location&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="203">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="203">
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 51</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="204">
           <span class="hits">1</span>
           
-          <code class="ruby">        hash = @login_attr.merge(:location =&gt; max_characters)</code>
+          <code class="ruby">          it &quot;should have an occupation attribute&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="205">
           <span class="hits">1</span>
           
-          <code class="ruby">        User.new(hash).should_not be_valid</code>
+          <code class="ruby">        @user.occupation.should eq (&quot;UX | UI Designer&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="206">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="207">
@@ -2617,103 +3377,103 @@
         <li class="covered" data-hits="1" data-linenumber="208">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;should accept under 40 character limit strings&quot; do</code>
+          <code class="ruby">          it &quot;should reject over 50 character limit strings&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="209">
           <span class="hits">1</span>
           
-          <code class="ruby">        max_characters = &quot;a&quot; * 9</code>
+          <code class="ruby">          max_characters = &quot;a&quot; * 51</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="210">
           <span class="hits">1</span>
           
-          <code class="ruby">        hash = @login_attr.merge(:location =&gt; max_characters)</code>
+          <code class="ruby">          hash = @login_attr.merge(:location =&gt; max_characters)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="211">
           <span class="hits">1</span>
           
-          <code class="ruby">        User.new(hash).should be_valid</code>
+          <code class="ruby">          User.new(hash).should_not be_valid</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="212">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="213">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="214">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="215">
+        <li class="covered" data-hits="1" data-linenumber="214">
+          <span class="hits">1</span>
           
+          <code class="ruby">        it &quot;should accept under 40 character limit strings&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="215">
+          <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">          max_characters = &quot;a&quot; * 9</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="216">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;user requires all required input fields&quot; do</code>
+          <code class="ruby">          hash = @login_attr.merge(:location =&gt; max_characters)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="217">
           <span class="hits">1</span>
           
-          <code class="ruby">      @user = User.new(@login_attr)</code>
+          <code class="ruby">          User.new(hash).should be_valid</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="218">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="218">
           
-          <code class="ruby">      assert @user.save</code>
+          
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="219">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      assert @user.errors[:user].empty?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="220">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="221">
+        <li class="never" data-hits="" data-linenumber="219">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="222">
+        <li class="covered" data-hits="1" data-linenumber="220">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      it &quot;user requires all required input fields&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="223">
+        <li class="covered" data-hits="1" data-linenumber="221">
+          <span class="hits">1</span>
           
+          <code class="ruby">        @user = User.new(@login_attr)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="222">
+          <span class="hits">1</span>
           
-          <code class="ruby">end</code>
+          <code class="ruby">        assert @user.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="223">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        assert @user.errors[:user].empty?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="224">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="225">
@@ -2723,6 +3483,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="226">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="227">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="228">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="229">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="230">
           
           
           <code class="ruby"></code>

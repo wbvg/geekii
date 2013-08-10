@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+if (window.location.href.match(/page/)) {
+  window.location.hash = '#myTab';
+}
+
 $('#myTab a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');

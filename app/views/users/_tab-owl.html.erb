@@ -1,26 +1,25 @@
 <% @user.statuses.each do |status| %>
-<% if !status.need_help? %>
-  <div class="statuses_home col-lg-5 reddy">
-    <ul>
-    <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
-     <%= image_tag('../images/owl_upears_mini.png' ) %>
-     <button type="button" class="btn btn-default topper" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button></li>
-    <li><button class="btn btn-warning"><%= link_to(status.user.username, status.user ) %></button></li>
-    <li class="topper"><%= status.category %></li>
-    <li class="status_control"><i>"<%= status.status %>"</i></li>
-    <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
+  <% if !status.need_help? %>
+    <div class="statuses_home col-lg-5 reddy">
+      <ul>
+        <li><%= image_tag(status.user.avatar, :class => "profile" ) %>
+         <%= image_tag('../images/owl_upears_mini.png' ) %>
+         <button type="button" class="btn btn-default topper" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">I know this</button></li>
+        <li><button class="btn btn-warning"><%= link_to(status.user.username, status.user ) %></button></li>
+        <li class="topper"><%= status.category %></li>
+        <li class="status_control"><i>"<%= status.status %>"</i></li>
+        <li><%= time_ago_in_words(status.created_at) + " ago" %></li>
 
-    <% if user_signed_in? %>
-      <li><%= link_to 'Edit', edit_status_path(status), :method => :get, :class => 'btn btn-primary' %>
-      <%= link_to 'Delete Status', status, :method => :delete, :class => 'btn btn-danger' %></li>
-    <% end %>
-      <% flash.each do |name,msg| %>
-      <% content_tag(:div, msg, class: "alert alert-#{name}") %>
-    <% end %>
+      <% if user_signed_in? %>
+        <li><%= link_to 'Edit', edit_status_path(status), :method => :get, :class => 'btn btn-primary' %>
+        <%= link_to 'Delete Status', status, :method => :delete, :class => 'btn btn-danger' %></li>
+      <% end %>
+        <% flash.each do |name,msg| %>
+        <% content_tag(:div, msg, class: "alert alert-#{name}") %>
+      <% end %>
 
-  </ul>
- </div>
-
+      </ul>
+     </div>
   <% end %>
 <% end %>
 
@@ -31,12 +30,3 @@
     </ul>
   </div>
 </div>
-
-<!-- <div class="row">
-  <div class="paginate col-lg-12">
-    <ul class="pagination pagination-large">
-      <li><a href="#">&laquo;</a></li>
-      <li><a href="#">&raquo;</a></li>
-    </ul>
-  </div>
-</div> -->

@@ -36,7 +36,11 @@ class User < ActiveRecord::Base
                             message: "Must be formatted correctly."
                           }
 
-  validates :location, presence: true, length: { maximum: 50, message: "Must be less than 50 characters" }
+  validates :location, presence: true, length: { maximum: 50, message: "Must be less than 50 characters" },
+                            format:  {
+                            with: /[a-zA-Z0-9_]/,
+                            message: "Must be formatted correctly."
+                          }
 
   validates :username, presence: true,
                            uniqueness: true,
@@ -66,6 +70,8 @@ class User < ActiveRecord::Base
 
     # for the will_paginate
   self.per_page = 4
+
+
 
 
 

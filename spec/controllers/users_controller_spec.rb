@@ -25,19 +25,24 @@
 #
 
 require 'spec_helper'
-require 'user'
 
 describe UsersController do
 
-  #   describe "GET 'show'" do
+    describe "GET 'show' " do
+      before do
+        get :show
+      end
 
-  #    it "should be successful" do
-  #     get :show
-  #     response.should be_success
-  #   end
+     it "should respond with a status 200" do
+        expect(response).to be_success
+        expect(response.status).to eq(200)
+      end
 
-  # end
+      # it "should give the statuses in an instance variable in reverse order" do
+      #   expect(assigns(:statuses)).to be
+      #   expect(assigns(:statuses).first.class).to eq(Status)
+      #   # expect(assigns(:statuses).first.name).to eq("Fruit number 2")
+      # end
+    end
 
-
-
-end
+  end

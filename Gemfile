@@ -37,6 +37,12 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  gem 'better_errors'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
+end
 
   gem "database_cleaner", :group => :test
   gem "email_spec", :group => :test
@@ -46,15 +52,13 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails'
-
+  gem 'shoulda-matchers'
   # gem "capybara"
-  gem 'pry-rails'
-  gem 'pry-debugger'
-  gem 'pry-stack_explorer'
+
 
   gem 'annotate'
   gem 'quiet_assets'
-  gem 'better_errors'
+
   # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)
   # http://localhost:3000/__better_errors (reports last exception for debugging)
   gem 'binding_of_caller'

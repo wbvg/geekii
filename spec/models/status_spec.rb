@@ -1,9 +1,5 @@
 require 'spec_helper'
 
-describe Status do
- it { should belongs_to :users }
-end
-
   # == Schema Information
 #
 # Table name: statuses
@@ -17,60 +13,82 @@ end
 #  updated_at :datetime         not null
 #
 
-  # def initialize
-  #   @status_attr
-  # e nd
-
- describe "A status" do
+ describe Status do
 
   before(:each) do
     @status_attr = {
       :user_id => "1",
       :category => "UX | UI Designer",
       :status => "Hi I need help",
-      :need_help => "f"
+      :need_help => true
     }
-  end
-
-    before(:each) do
-        @status= Status.new(@status_attr)
+      @status = Status.create(@status_attr)
     end
 
-    it "should be logged in to post a status" do
-      post :create, status: { status: "Hi I need help"}
-      assert_response :redirect
-      assert_redirected_to new_user_session_path
+    describe "status belongs to user relationship test" do
+     it { should belong_to :user }
     end
 
-    it "should create status when logged in" do
-      sign_in users(:willy)
-      assert_difference ('Status.count') do
-        post :create, status: { status: @status_attr }
+  describe "category" do
+
+       it "should have a category attribute" do
+        @status.category.should eq ("UX | UI Designer")
+      end
+
+      it "should reject over 40 character limit strings" do
+        max_characters = "a" * 41
+        hash = @status_attr.merge(:category => max_characters)
+        Status.new(hash).should_not be_valid
+      end
+
+      it "should accept under 40 character limit strings" do
+        max_characters = "a" * 18
+        hash = @status_attr.merge(:category => max_characters)
+        Status.new(hash).should be_valid
+      end
+
+   end
+
+    describe "status" do
+
+      it "should reject over 200 character limit strings" do
+        max_characters = "a" * 201
+        hash = @status_attr.merge(:status => max_characters)
+        Status.new(hash).should_not be_valid
+      end
+
+      it "should accept under 200 character limit strings" do
+        max_characters = "a" * 18
+        hash = @status_attr.merge(:status => max_characters)
+        Status.new(hash).should be_valid
+      end
+
+      it "should create a new instance given a valid attribute" do
+      Status.create!(@status_attr)
       end
     end
 
-    it "should create a new instance given a valid attribute" do
-    Status.create!(@status_attr)
-    end
-
-  it "should have a status with a user id" do
-    status = Status.new
-    @status_attr.status = "Hi I need help"
-    assert !status.save
-    assert !status.errors[:user_id].empty?
+  describe "user id" do
+       it "should have a user id attribute" do
+        @status.user_id.should eq (1)
+       end
   end
 
-    it "status requires all content" do
-      status = Status.new
-      assert status.save
-      assert status.errors[:status].empty?
-    end
+ describe "need_help" do
+       it "should accept" do
+        # @status.need_help.should eq (true)
+        need_help = true
+        hash = @status_attr.merge(:need_help => need_help)
+        Status.new(hash).should be_valid
+       end
 
-
-      it "should have a category attribute" do
-      status = Status.new
-      @status_attr.should respond_to(:category)
-      @status_attr.category?.should == true
-      end
-
+        it "should reject non boolean" do
+        # @status.need_help.should eq (true)
+        need_help = ("strine" && 0)
+        hash = @status_attr.merge(:need_help => need_help)
+        Status.new(hash).should_not be_valid
+       end
   end
+
+
+end

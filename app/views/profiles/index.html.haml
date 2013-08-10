@@ -2,9 +2,7 @@
   .container.marketing
     %h2.featurette-heading.bluey-text Skills
     %div#new_skill
-
       %div#chart
-
       %div.row
         %div.col-lg-6
           / %div.float
@@ -14,8 +12,5 @@
           %div.clear
           %div.float
             = button_tag('Chart', :class => 'btn btn-success', :id => 'show_chart')
-
         %div.large-5.columns
-
-
       / = select_tag 'labels', options_for_select(@labels.map { |a| [a,a]})

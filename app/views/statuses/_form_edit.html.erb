@@ -2,10 +2,11 @@
   <div class="status-container">
     <h1>Edit status whoops!</h1>
 
-    <%= form_for @status do |f| %>
+    <%= form_for @status, :validate => true do |f| %>
         <% flash.each do |name,msg| %>
           <% content_tag(:div, msg, class: "alert alert-#{name}") %>
        <% end %>
+        <%= yield(:user_validators) %>
 
 <li>
     <%= f.label :category %><br/>

@@ -14,12 +14,21 @@
 class Status < ActiveRecord::Base
   attr_accessible :user_id, :category, :status, :need_help
 
-  validates :category, :presence => true
-  validates :status, :presence => true
-  belongs_to :user
+  validates :category, :presence => true, length: { maximum: 40, message: "Must be less than 40 characters" },
+                            format:  {
+                            with: /[a-zA-Z0-9_]/,
+                            message: "Must be formatted correctly."
+                          }
 
-  validates_length_of :status, :maximum => 254,
-      :too_long => "{{count}} characters is the maximum allowed"
+  validates :status, :presence => true, length: { maximum: 200, message: "Must be less than 200 characters" },
+                            format:  {
+                            with: /[a-zA-Z0-9_]/,
+                            message: "Must be formatted correctly."
+                          }
+
+validates :need_help, :presence => true
+
+  belongs_to :user
 
   def user_avatar
     user.avatar if user

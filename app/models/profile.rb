@@ -14,27 +14,39 @@
 class Profile < ActiveRecord::Base
 
   attr_accessible :user_id, :chapter, :label, :value
-  has_many :user, :inverse_of => :profiles
-  validates :chapter, :label, :value, :user_id, presence: true,
-  length: { maximum: 40, message: "Must be less than 40 characters" },
+  validates :user_id, presence: true
+
+
+  validates :chapter, :presence => true, length: { maximum: 40, message: "Must be less than 40 characters" },
                             format:  {
                             with: /[a-zA-Z0-9_]/,
                             message: "Must be formatted correctly."
                           }
 
-  # def @user_profiles
-  #   @user.profiles
-  # end
+  validates :label, :presence => true, length: { maximum: 30, message: "Must be less than 30 characters" },
+                          format:  {
+                          with: /[a-zA-Z0-9_]/,
+                          message: "Must be formatted correctly.",
+                        }
 
-  validates_length_of :chapter, :label, :maximum => 254,
-      :too_long => "{{count}} characters is the maximum allowed"
+  validates :value, :presence => true, length: { maximum: 40, message: "Must be less than 40 characters" },
+                            format:  {
+                            with: /[0-9]/,
+                            message: "Must be a number value less than 100."
+                          },
+                         :numericality => {
+                          :greater_than => 0,
+                          :less_than => 101,
+                          message: "Must be a number between 1 - 100." }
+
+ belongs_to :user, :inverse_of => :profiles
 
   def Profile.chronological
     Profile.order("created_at desc")
   end
 
   # for the will_paginate
-  self.per_page = 2
+  self.per_page = 4
 
 end
 
