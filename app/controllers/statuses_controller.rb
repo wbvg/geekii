@@ -25,6 +25,7 @@ class StatusesController < ApplicationController
     # @statuses = Status.all
     @statuses = Status.chronological.paginate(:page => params[:page], :per_page => 4)
     @status = Status.find(params[:id])
+    @status_last = Status.last
 
   end
 
