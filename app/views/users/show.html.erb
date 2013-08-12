@@ -32,7 +32,7 @@
       </div>
       <div class="float">
         <% if user_signed_in? %>
-          <%= link_to('New', :id => 'new_profile', new_profile_path, :remote => true, :class => 'btn btn-primary btn-large') %>
+          <%= link_to('New',  new_profile_path,:id => 'new_profile', :remote => true, :class => 'btn btn-primary btn-large') %>
         <% end %>
       </div>
       <div id="new_skill"></div>

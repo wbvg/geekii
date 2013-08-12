@@ -3,6 +3,9 @@
 Please visit the Designer to Developer social networking app:
 http://geekii.herokuapp.com/
 
+In order to seed to Heroku I have disabled avatar verification which may cause
+rspec tests to fall from 98.6%
+
 ==What I would like to do later
 
 - Add more tests for controllers
