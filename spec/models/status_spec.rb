@@ -76,17 +76,10 @@ require 'spec_helper'
 
  describe "need_help" do
        it "should accept" do
-        @status.need_help.should eq (1)
-        need_help = 1
-        hash = @status_attr.merge(:need_help => need_help)
+        @status.need_help.should eq (true || false )
+        accept = true || false
+        hash = @status_attr.merge(:need_help => accept)
         Status.new(hash).should be_valid
-       end
-
-        it "should reject non boolean" do
-        @status.need_help.should eq (1)
-        need_help = ("strine")
-        hash = @status_attr.merge(:need_help => need_help)
-        Status.new(hash).should_not be_valid
        end
   end
 

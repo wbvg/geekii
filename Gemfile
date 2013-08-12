@@ -18,6 +18,7 @@ gem 'will_paginate', '~> 3.0.0'
 gem 'js-routes'
 gem 'haml'
 
+
 # testing
 
 # Bundle edge Rails instead:
@@ -55,7 +56,7 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  # gem "capybara"
+  gem "capybara"
 
 
   gem 'annotate'
