@@ -1,6 +1,6 @@
 == Welcome to Geekii
 
-Please visit our test site and start hating on Online Dating:
+Please visit the Designer to Developer social networking app:
 http://geekii.herokuapp.com/
 
 ==What I would like to do later
