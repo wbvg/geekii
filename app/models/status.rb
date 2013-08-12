@@ -26,7 +26,7 @@ class Status < ActiveRecord::Base
                             message: "Must be formatted correctly."
                           }
 
-validates :need_help, :presence => true
+validates :need_help, :inclusion => { :in => [1, 0] }
 
 delegate :username, :to => :user
 

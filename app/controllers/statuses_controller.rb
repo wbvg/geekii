@@ -16,6 +16,7 @@ class StatusesController < ApplicationController
 
   def create
     @status = current_user.statuses.new(params[:status])
+    # binding.pry
     @status.save
     redirect_to(new_status_path)
   end
