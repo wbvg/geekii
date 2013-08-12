@@ -52,7 +52,6 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  # attr_accessible :title, :body
 
   has_many :statuses, :dependent => :destroy, :order => "created_at DESC"
   has_many :profiles, :inverse_of => :user, :dependent => :destroy, :order => "created_at DESC"
@@ -60,7 +59,7 @@ class User < ActiveRecord::Base
 #Paperclip avatar
   attr_accessible :avatar, :avatar_file_name, :avatar_content_type, :avatar_file_size
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
-  validates :avatar, presence: true
+  # validates :avatar, presence: true
 
   delegate :avatar, :to => :user, :prefix => true, :allow_nil => true
 

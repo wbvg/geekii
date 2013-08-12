@@ -2,9 +2,9 @@
 # Profile.destroy_all
 # Status.destroy_all
 
-u1 = User.create(:email => 'willy@gmail.com', :password => '123456', :password_confirmation => '123456', :occupation => "UX | UI Designer",   :location => "Sydney", :avatar_file_name => "willy_fb_profile.jpg", :avatar_content_type => "image/jpeg", :avatar_file_size => "38103", :username => "willy")
+u1 = User.create(:email => 'willy@gmail.com', :password => '123456', :password_confirmation => '123456', :occupation => "UX | UI Designer",   :location => "Sydney", :username => "willy")
 
-u2 = User.create(:email => 'missy@gmail.com', :password => '123456', :password_confirmation => '123456', :occupation => "UX | UI Designer",   :location => "Sydney", :avatar_file_name => "willy_fb_profile.jpg", :avatar_content_type => "image/jpeg", :avatar_file_size => "38103", :username => "willy")
+u2 = User.create(:email => 'missy@gmail.com', :password => '123456', :password_confirmation => '123456', :occupation => "UX | UI Designer",   :location => "Sydney", :username => "missy")
 
 
 s1 = Status.create(:category => "UX | UI Designer", :status => "Hi I need help", :need_help => true)
