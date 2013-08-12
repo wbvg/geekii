@@ -40,6 +40,7 @@ class Profile < ActiveRecord::Base
                           message: "Must be a number between 1 - 100." }
 
  belongs_to :user, :inverse_of => :profiles
+   delegate :username, :to => :user
 
   def Profile.chronological
     Profile.order("created_at desc")

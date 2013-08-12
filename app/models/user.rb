@@ -63,6 +63,8 @@ class User < ActiveRecord::Base
 
   delegate :avatar, :to => :user, :prefix => true, :allow_nil => true
 
+
+
   def user_avatar
     user.avatar if user
   end

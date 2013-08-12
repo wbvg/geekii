@@ -28,6 +28,8 @@ class Status < ActiveRecord::Base
 
 validates :need_help, :presence => true
 
+delegate :username, :to => :user
+
   belongs_to :user
 
   def user_avatar

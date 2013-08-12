@@ -1,6 +1,6 @@
 <div class="status_featured">
 
-<li><b>Geekii</b> posted: <%= time_ago_in_words(@status_last.created_at) + " ago" %> |  by <%= link_to(@status_last.user.username, @status_last.user ) %></li>
+<li><b>Geekii</b> posted: <%= time_ago_in_words(@status_last.created_at) + " ago" %> |  by <%= link_to(@status_last.username, @status_last.user ) %></li>
      <li class="topper"><b>Category:</b> <%= @status_last.category %></li>
         <li><i>"<%= @status_last.status %>"</i></li>
 

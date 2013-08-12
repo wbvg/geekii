@@ -14,8 +14,12 @@ s4 = Status.create(:category => "UX | UI Designer", :status => "Hi I need help w
 s5 = Status.create(:category => "Back-End Developer", :status => "Hi I need help", :need_help => false)
 s6 = Status.create(:category => "Jack of All Trades", :status => "Hi I am looking to partner in Sydney area", :need_help => true)
 
-u1.statuses << [s1,s2,s5]
-u2.statuses << [s3,s4,s6]
+u1.statuses << s1
+u1.statuses << s2
+u1.statuses << s3
+u2.statuses << s4
+u2.statuses << s5
+u2.statuses << s6
 
 p1 = Profile.create(:label => 'Javascript', :value => 100, :chapter => 'Junior Dev')
 p2 = Profile.create(:label => 'Web Design', :value => 100, :chapter => 'Junior Dev')
