@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '3.2.14'
 
@@ -16,6 +17,7 @@ gem 'devise'
 gem 'will_paginate', '~> 3.0.0'
 gem 'js-routes'
 gem 'haml'
+
 # testing
 
 # Bundle edge Rails instead:
