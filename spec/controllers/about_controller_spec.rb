@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'user'
 
 describe AboutController do
 
@@ -9,6 +8,13 @@ describe AboutController do
       get :index
       response.should be_success
     end
+
+    it "should respond with a status 200" do
+        expect(response).to be_success
+        expect(response.status).to eq(200)
+      end
+
+
 
   end
 

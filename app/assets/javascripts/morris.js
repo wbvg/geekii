@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   var show_chart = function () {
     var chapter = $('#chapters').val();
 
@@ -20,6 +22,11 @@ $(document).ready(function () {
     });
   };
 
+
+
+
   $('#show_chart').click(show_chart).trigger('click');
+  // $('#new_profile').click(create_profile);
+
 });
 
